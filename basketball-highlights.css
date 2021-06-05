@@ -1,0 +1,46 @@
+h1,h2,a  {
+color: white;
+}
+body {
+    background-color: black;
+}
+.embed {
+    margin-top: 50px;
+}
+.embed1 {
+    margin-top: 50px;
+}
+.embed2 {
+    margin-top: 50px;
+}
+.embed3 {
+    margin-top: 50px;
+}
+.embed4 {
+    margin-top: 50px;
+}
+.embed5 {
+    margin-top: 50px;
+}
+.embed6 {
+    margin-top: 50px;
+}
+.embed7 {
+    margin-top: 50px;
+}
+/*..one {
+    display: inline-flex;
+    margin: 0% 4%;
+}
+.two {
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 18%;
+}
+.three {
+    display: inline-flex;
+    margin: 0% 1%;
+}
+h1 {
+    display: inline-flex;
+}

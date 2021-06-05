@@ -1,0 +1,48 @@
+font-face {
+  font-family: "Tesla";
+  src: url("TESLA.ttf") format("truetype");
+}
+.images-container {
+  margin-top: 50px;
+  transition: transform 0.25s ease;
+}
+/*
+.images-container:hover {
+  cursor: zoom-in;
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}*/
+body {
+  background-color: black;
+}
+h1 {
+  color: white;
+}
+textarea {
+  font-size: 20px;
+  max-width: 97%;
+  background: transparent;
+  color: #fff;
+}
+
+button {
+  display: none;
+}
+#output {
+  font-size: 23px;
+  padding: 3%;
+}
+h1 {
+  font-family: tesla;
+}
+
+.footer {
+  position: relative;
+  text-align: center;
+  top: 37%;
+  width: 100%;
+  color: white;
+}
+textarea {
+  margin-top: 50px;
+}

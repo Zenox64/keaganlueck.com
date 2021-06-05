@@ -1,0 +1,100 @@
+body {
+  background-color: #2c8685;
+}
+::selection {
+  background-color: #000;
+  color: #fff;
+  text-shadow: none;
+}
+.body-title,
+a:visited {
+  color: #00527e;
+  text-decoration: none;
+  text-shadow: -2px 2px #e4952d;
+}
+.cars-container {
+  display: flex;
+}
+.car-my,
+.car-e {
+  flex: 33.33%;
+  max-width: 100%;
+  height: auto;
+}
+.car-name {
+  color: #aa4650;
+}
+table {
+  width: 100%;
+  color: white;
+  margin-bottom: 3%;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+  text-align: center;
+}
+.first-col {
+  font-weight: bold;
+}
+#table-selec::selection {
+  color: #aa4650;
+}
+img {
+  transition: transform 0.25s ease;
+}
+img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+}
+#dollar,
+#expedition,
+#modely {
+  display: inline;
+}
+#taxBreak {
+  margin-left: 20%;
+  width: 200px;
+  height: 50px;
+  background: transparent;
+  border-color: #00527e;
+  color: #00527e;
+  outline: none;
+  border-radius: 30px;
+  font-weight: bolder;
+}
+a {
+  border-color: #00527e;
+  color: #00527e;
+}
+#taxBreak:hover {
+  cursor: pointer;
+}
+select {
+  background: transparent;
+  outline: none;
+}
+.footer {
+  color: white;
+  display: inline-block;
+  position: relative;
+  bottom: 0;
+  width: 99%;
+  height: 3.5rem;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+input {
+  width: 11%;
+}
+img {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}

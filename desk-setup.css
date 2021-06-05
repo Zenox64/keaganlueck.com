@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+}
+h1,a,p {
+    color: white;
+    font-family: monospace;
+}
+img {
+    width: 40%;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+  padding: 5%;
+  overflow: hidden;
+}
+img:active {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+.both-img, .all-txt {
+  display: flex;
+}
+.img, .txt {
+  flex: 33.33%;
+}
+.second {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+.both-img {
+  display: block;
+}
+.all-txt {
+  display: block;
+}
+#first {
+  display: none;
+}
+.second {
+  display: block;
+}
+}
