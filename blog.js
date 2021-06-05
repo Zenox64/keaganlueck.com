@@ -1,16 +1,15 @@
-    window.onload = function() {
-        jQuery('input[type=text]').blur();}
 function login() {
   var password = prompt(
     "Please enter the password to continue to Keagan Lueck's Blog"
   );
   while (password !== "Keagan21") {
-    password = prompt(
-      "Please enter the password to continue to Keagan Lueck's Blog"
-    );
+    /* password = prompt(
+      "Please enter the password to continue to locked blog post"
+    );*/
+    return;
   }
   alert("Password correct! You may proceed.");
-  // You might want to bring back the css of the body
+  window.open("blog(4-20-21).html"); // You might want to bring back the css of the body
 }
 //login();
 /* Set the width of the side navigation to 250px */

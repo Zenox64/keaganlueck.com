@@ -220,7 +220,7 @@ function pressed(e) {
         alert("Wallet address saved to clipboard");
       }, 250);
       console.log(
-        "Succes, bitcoin wallet address automatically copied to clipboard"
+        "Success, bitcoin wallet address automatically copied to clipboard"
       );
       break;
     case "suggestion":
