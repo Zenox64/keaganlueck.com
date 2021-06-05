@@ -1,4 +1,3 @@
-
 /* Set the width of the side navigation to 250px */
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -147,6 +146,9 @@ function pressed(e) {
     case "contact":
       window.location.replace((url = "contact.html"));
       break;
+    case "contact":
+      window.location.replace((url = "phone.html"));
+      break;
     default:
       tesla.innerHTML = "";
       header.innerHTML = greeting;
@@ -258,4 +260,4 @@ var sneak = "sneak";
 const baby = new Person();
 console.log(baby.bornOn.toLocaleString());
 Math.floor(age); // 3/9/2021, 1:35:50 PM
-document.getElementById("age").textContent = Math.floor(age)
+document.getElementById("age").textContent = Math.floor(age);
