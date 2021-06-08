@@ -160,6 +160,17 @@ var myPix = [
   "DSC_0736.jpg",
   "DSC_0892.jpg",
   "DSC_0923.jpg",
+  "s20fe-back.jpg",
+  "s20fe-front.jpg",
+  "32-raptor.jpg",
+  "selfie(on-new-phone).jpg",
+  "other-sister.jpg",
+  "roadster2.0.jpg",
+  "park.jpg",
+  "roses.jpg",
+  "pi.jpg",
+  "bonfire.jpg",
+  "sittin-by-fire.jpg",
 ];
 
 var numberOfPics;
