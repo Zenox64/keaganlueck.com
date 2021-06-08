@@ -247,7 +247,7 @@ input {
 }
 @media screen and (max-width: 376px) {
   .navbar {
-    height: 12%;
+    height: 16%;
   }
     .navbar-toggle {
     margin-top: -2%;
@@ -255,7 +255,7 @@ input {
 }
 @media screen and (max-width: 361px) {
   .navbar {
-    height: 13%;
+    height: 16%;
   }
   .navbar-toggle {
     margin-top: -2%;
