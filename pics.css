@@ -212,7 +212,6 @@ input {
     justify-content: flex-end;
   }
 
-
   .main-nav li {
     margin: 0;
   }
@@ -235,13 +234,21 @@ input {
     background-color: #fff;
   }
 }
+@media screen and (device-height: 360px) and (device-width: 667px) and (orientation: landscape) {
+  .navbar {
+    height: 25%;
+  }
+  .navbar-toggle {
+    margin-top: 1%;
+  }
+}
 @media screen and (max-width: 420px) {
   .navbar {
     width: 100%;
     margin-left: 0%;
     height: 13%;
   }
-    .navbar-toggle {
+  .navbar-toggle {
     margin-top: -4%;
   }
 }
@@ -249,7 +256,7 @@ input {
   .navbar {
     height: 16%;
   }
-    .navbar-toggle {
+  .navbar-toggle {
     margin-top: -2%;
   }
 }

@@ -272,7 +272,14 @@ input {
     margin-left: -2%;
   }
 }
-
+@media screen and (device-height: 360px) and (device-width: 667px) and (orientation: landscape) {
+  .navbar {
+    height: 38%;
+  }
+  .navbar-toggle {
+    margin-top: 0%;
+  }
+}
 @media screen and (min-width: 800px) {
   .fas {
     display: none;
