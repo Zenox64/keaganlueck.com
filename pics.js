@@ -178,7 +178,18 @@ var myPix = [
   "IMG_4591.jpg",
   "IMG_4594.jpg",
   "IMG_4595.jpg",
-  "IMG_4628.jpg"
+  "IMG_4628.jpg",
+  "s20fe-back.jpg",
+  "s20fe-front.jpg",
+  "32-raptor.jpg",
+  "selfie(on-new-phone).jpg",
+  "other-sister.jpg",
+  "roadster2.0.jpg",
+  "park.jpg",
+  "roses.jpg",
+  "pi.jpg",
+  "bonfire.jpg",
+  "sittin-by-fire.jpg",
 ];
 var techPix = ["gopher-visit.jpeg"];
 window.onload = choosePic;
