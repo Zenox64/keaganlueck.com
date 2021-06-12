@@ -173,7 +173,7 @@ p {
 }
 .flex-item-left {
   padding: 10px;
-  flex: 50%;
+  flex: 60%;
   border-radius: 30px;
   height: 40rem;
   margin: 1%;
@@ -185,11 +185,11 @@ p {
 .flex-item-right {
   background-color: #45a29e;
   padding: 10px;
-  flex: 50%;
+  flex: 40%;
   box-shadow: 12px 12px 12px 12px #000;
-  border-radius: 30px;
+  border-radius: 0px;
   margin: 1%;
-  height: 50rem;
+  height: 30rem;
   margin-top: 0%;
   max-height: 50rem;
   overflow-y: scroll;
@@ -226,7 +226,12 @@ boxtext0 {
   color: green;
   background-color: transparent;
 }
-@media (max-width: 1060px) {
+@media screen and (max-width: 1025px) {
+  .main-pic {
+    width: 100%;
+  }
+}
+@media (max-width: 1023px) {
   .main-pic {
     width: 40%;
   }
@@ -308,7 +313,11 @@ boxtext0 {
     max-width: 50%;
   }
 }
-
+@media screen and (max-width: 769px) and (min-width: 767px) {
+  .main-pic {
+    width: 60%;
+  }
+}
 @media screen and (min-width: 800px) {
   .navbar {
     display: flex;
@@ -357,7 +366,6 @@ boxtext0 {
   }
 }
 @media screen and (max-width: 420px) and (min-width: 401px) {
-  
   i {
     position: relative;
     top: -0.4rem;
@@ -367,6 +375,9 @@ boxtext0 {
     width: 111%;
     margin-left: -5.5%;
     margin-top: -6%;
+  }
+  .main-pic {
+    width: 90%;
   }
 }
 @media screen and (max-width: 400px) {
@@ -379,6 +390,9 @@ boxtext0 {
     margin-left: -6.5%;
     margin-top: -6%;
   }
+    .main-pic {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 376px) {
   i {
@@ -388,6 +402,9 @@ boxtext0 {
   .width {
     font-size: 27px;
   }
+    .main-pic {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 361px) {
   i {
@@ -395,6 +412,9 @@ boxtext0 {
   }
   .width {
     font-size: 27px;
+  }
+    .main-pic {
+    width: 90%;
   }
 }
 @media screen and (max-width: 321px) {
@@ -404,6 +424,9 @@ boxtext0 {
   .width {
     font-size: 23px;
   }
+    .main-pic {
+    width: 90%;
+  }
 }
 .footer {
   color: white;
@@ -412,10 +435,10 @@ boxtext0 {
   bottom: 0;
   width: 99%;
   top: 9rem;
-  height: 5.5rem;;
+  height: 5.5rem;
 }
 .footer-text {
-    font-size: 10pt;
+  font-size: 10pt;
 }
 body::-webkit-scrollbar {
   width: 1em;
@@ -454,8 +477,7 @@ body::-webkit-scrollbar-thumb {
   display: block;
   transition: 0.3s;
   font-family: monospace;
-    background: transparent;
-
+  background: transparent;
 }
 
 /* When you mouse over the navigation links, change their color */
