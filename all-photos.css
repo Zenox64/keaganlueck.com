@@ -109,6 +109,10 @@ recents {
 a {
   color: white;
   font-family: "Oswald", sans-serif;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
 }
 h1:visited {
   color: white;
