@@ -90,8 +90,9 @@ recents {
   margin-left: 10px;
 }
 .smaller {
-  display: inline;
-  font-size: 40%;
+  display: inline-block;
+  font-size: 50%;
+  background-color: transparent;
 }
 .navbar-toggle {
   position: absolute;
