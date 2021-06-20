@@ -195,6 +195,7 @@ p {
   max-height: 50rem;
   overflow-y: scroll;
   overflow-x: hidden;
+  border-radius: 10px;
 }
 .flex-item-right::-webkit-scrollbar-track {
   margin-top: 10px;
@@ -212,6 +213,10 @@ p {
   background-color: #1f2833;
   outline: 0px solid #1f2833;
   border-radius: 10px;
+}
+a {
+  color: black;
+  background-color: transparent;
 }
 .description {
   width: 70%;
@@ -234,12 +239,12 @@ p {
   border-radius: 30px;
   box-shadow: 12px 12px 12px 12px #000;
 }
-boxtitle0 {
-  background-color: green;
-}
 boxtext0 {
-  color: green;
+  color: white;
   background-color: transparent;
+  text-align: left;
+  font-size: 19pt;
+  font-family: monospace;
 }
 @media screen and (max-width: 1025px) {
   .main-pic, .description {
