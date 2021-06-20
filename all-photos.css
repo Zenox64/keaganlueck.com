@@ -89,7 +89,10 @@ recents {
   margin-top: 10px;
   margin-left: 10px;
 }
-
+.smaller {
+  display: inline;
+  font-size: 40%;
+}
 .navbar-toggle {
   position: absolute;
   top: 10px;
