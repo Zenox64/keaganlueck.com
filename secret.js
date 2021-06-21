@@ -1,3 +1,9 @@
+function showImg() {
+  document.getElementById("hiddenImg").style.display = "inline-block";
+}
+function hideImg(){
+  document.getElementById("hiddenImg").style.display = "none"
+}
 /* Set the width of the side navigation to 250px */
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
