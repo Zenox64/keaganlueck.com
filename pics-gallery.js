@@ -1,3 +1,5 @@
+var mainPicName = document.getElementById("imgName").getAttribute("src");
+imgNameHeader.textContent = mainPicName
 /*var text = document.getElementById("input").value;
 function changingText() {
   text.value = answer;
