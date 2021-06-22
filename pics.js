@@ -190,6 +190,22 @@ var myPix = [
   "pi.jpg",
   "bonfire.jpg",
   "sittin-by-fire.jpg",
+  "BF-Pics(2021)/fire.jpg",
+  "BF-Pics(2021)/closeup.jpg",
+  "BF-Pics(2021)/kalisia.jpg",
+  "BF-Pics(2021)/poser.jpg",
+  "BF-Pics(2021)/tth.jpg",
+  "BF-Pics(2021)/DJI_0315.JPG",
+  "BF-Pics(2021)/DJI_0319.JPG",
+  "BF-Pics(2021)/lol.jpg",
+  "BF-Pics(2021)/kandh.jpg",
+  "BF-Pics(2021)/cousins.jpg",
+  "BF-Pics(2021)/biggest.jpg",
+  "BF-Pics(2021)/big.jpg",
+  "BF-Pics(2021)/kyandbobby.jpg",
+  "BF-Pics(2021)/20210617_211939.jpg",
+  "BF-Pics(2021)/caseys.jpg",
+  "BF-Pics(2021)/kyacart.jpg",
 ];
 var techPix = ["gopher-visit.jpeg"];
 window.onload = choosePic;
