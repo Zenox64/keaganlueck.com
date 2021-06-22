@@ -172,6 +172,11 @@ p {
   border-radius: 30px;
   width: 70%;
   box-shadow: 12px 12px 12px 12px #000;
+  transition: transform .2s;
+}
+.main-pic:hover {
+  transform: scale(1.5);
+  cursor: zoom-in;
 }
 .flex-item-left {
   padding: 10px;
@@ -228,8 +233,8 @@ a {
   background-color: #45a19e;
   text-align: left;
   border-radius: 10px;
-  text-indent: 10px;
   color: white;
+  padding: 10px;
 }
 .box {
   margin-top: -10%;
