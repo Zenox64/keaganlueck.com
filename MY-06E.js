@@ -33,9 +33,12 @@ function expeditionTires() {
 }
 //modely
 var amount = document.getElementById("input").value;
-
 var yPowerConsumption = document.getElementById("electricityInputPrice").value * 69444;
+
 var yBuyPrice = 50000;
+var ModelYBuyPrice = yBuyPrice.toLocaleString();
+document.getElementById('yBuyPrice').textContent = "$" + ModelYBuyPrice;
+
 var change = 1000;
 var yTires = change * amount;
 var tire = yTires.toLocaleString();
@@ -47,7 +50,7 @@ modely.textContent = "$" + mY;
 var i = 1;
 function modelYTaxBreak() {
   var yPowerConsumption = document.getElementById("electricityInputPrice").value * 69444;
-  var yBuyPrice = 50000;
+  var yBuyPrice = document.getElementById('yBuyPrice').value;
   i++;
   //below if there is a remainder of zero it will run, this is a note to self
   //for future reference
@@ -132,8 +135,69 @@ function dynamicPricePerKWH() {
   electricityCostConv = electricityCost.toLocaleString();
   mYPricePer.textContent = '$' + electricityCostConv;
 
+}/*
+function displayNone() {
+document.getElementById("colorWhite").style.display = "none";
+document.getElementById("colorRed").style.display = "none";
 }
-
+displayNone();*/
 function goBack() {
   window.history.back();
+}
+function vehicleRight() {
+  document.getElementById("rightCar").src = "21-m3.png";
+      var carNameOutput = document.getElementById("carName");
+      var upMostHeaderOutput = document.getElementById('upmostHeader');
+    carNameOutput.textContent = "2021 Tesla Model 3 Long Range";
+    upMostHeaderOutput.textContent = "2021 Tesla Model 3 vs 2006 Ford Expedition at 250,000 Miles"
+   /*document.getElementById("colorWhite").style.display = "inline-block";
+    document.getElementById("colorRed").style.display = "inline-block";*/
+    model3BuyPrice = 45000;
+    model3BuyPriceConv = model3BuyPrice.toLocaleString();
+    document.getElementById("yBuyPrice").textContent = "$" + model3BuyPriceConv;
+
+
+  var yTires = document.getElementById("input").value * 1000;
+
+  var electricityCost =
+  document.getElementById("electricityInputPrice").value * 69444;
+  var modelYTotalCost = model3BuyPrice + yTires + electricityCost;
+
+  model3TotalCostConv = modelYTotalCost.toLocaleString();
+  modely.textContent = '$' + model3TotalCostConv;
+
+}
+function vehicleLeft() {
+    document.getElementById("rightCar").src = "21-my.png";
+    var carNameOutput = document.getElementById("carName");
+    var upMostHeaderOutput = document.getElementById('upmostHeader');
+    carNameOutput.textContent = "2021 Tesla Model Y Long Range";
+    upMostHeaderOutput.textContent = "2021 Tesla Model Y vs 2006 Ford Expedition at 250,000 Miles"
+    /*document.getElementById("colorWhite").style.display = "none";
+    document.getElementById("colorRed").style.display = "none";*/
+    modelYBuyPrice = 50000;
+    modelYBuyPriceConv = modelYBuyPrice.toLocaleString();
+    document.getElementById("yBuyPrice").textContent = "$" + modelYBuyPriceConv;
+
+    //buy price change
+    model3BuyPrice = 50000;
+    model3BuyPriceConv = model3BuyPrice.toLocaleString();
+    document.getElementById("yBuyPrice").textContent = "$" + model3BuyPriceConv;
+
+
+  var yTires = document.getElementById("input").value * 1000;
+
+  var electricityCost =
+  document.getElementById("electricityInputPrice").value * 69444;
+  var modelYTotalCost = model3BuyPrice + yTires + electricityCost;
+
+  model3TotalCostConv = modelYTotalCost.toLocaleString();
+  modely.textContent = '$' + model3TotalCostConv;
+}
+function colorToWhite() {
+      document.getElementById("rightCar").src = "21-m3(white).png";
+}
+function colorToRed() {
+        document.getElementById("rightCar").src = "21-m3.png";
+
 }

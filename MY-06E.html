@@ -1,20 +1,21 @@
 <html>
   <head>
-    <title>Model Y vs Expedition @250K mi</title>
+    <title>Tesla vs Oil Built Car Companies @250K mi</title>
     <link rel="shortcut icon" href="title icon transparent backgroud.png" />
+    <script src="https://kit.fontawesome.com/aa9d3f27c6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="MY-E06.css" />
   </head>
   <body>
     <h1 class="body-title">
       <center>
-        <a href="index.html"
+        <a href="index.html" id="upmostHeader"
           >2021 Tesla Model Y vs 2006 Ford Expedition at 250,000 Miles</a
         >
       </center>
     </h1>
     <div class="cars-container">
       <img src="06-expedition.png" class="car-my" width="0px" />
-      <img src="21-my.png" class="car-e" width="0px" />
+      <img src="21-my.png" class="car-e" width="0px" id="rightCar"/>
     </div>
     <table>
       <tr>
@@ -29,11 +30,13 @@
         </td>
         <td colspan="3">
           <h1 class="car-name">
-            <u
-              ><a href="21-my.png" target="_blank"
-                >2021 Tesla Model Y Long Range</a
-              ></u
-            >
+            <u>
+              <button class="arrow" onclick="vehicleLeft()"><i class="fas fa-arrow-circle-left"></i></button>
+              <a href="21-my.png" target="_blank" id="carName"> 2021 Tesla Model Y Long Range </a>
+              <button class="arrow" onclick="vehicleRight()"><i class="fas fa-arrow-circle-right" onclick="vehicleRight()"></i></button>
+              <!--<br /><button class="colorRed" id="colorRed" onclick="colorToRed()"></button>
+              <button class="colorWhite" id="colorWhite" onclick="colorToWhite()"></button>
+              --></u>
           </h1>
         </td>
       </tr>
@@ -47,7 +50,7 @@
       <tr>
         <td class="first-col" id="table-selec">Buy Price</td>
         <td id="table-selec" colspan="2"><param id="buyPrice" value="8000">$8,000</param></td>
-        <td id="table-selec" colspan="2"><param id="yBuyPrice" value="50000">$50,000</param></td>
+        <td id="table-selec" colspan="2"><p id="yBuyPrice" value="50000"></p></td>
       </tr>
       <tr>
         <td class="first-col" id="table-selec">MN State Text Credit</td>

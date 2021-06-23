@@ -15,6 +15,33 @@ a:visited {
 .cars-container {
   display: flex;
 }
+.fas {
+  font-size: 40pt;
+}
+.arrow {
+  background-color: transparent;
+  border: transparent;
+  color: #aa4650;
+}
+button:hover {
+  cursor: pointer;
+}
+.colorRed {
+  background-color: #9d0909;
+  border: transparent;
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  box-shadow: 2px 2px 2px 2px #000;
+}
+.colorWhite {
+    background-color: #FFf;
+  border: transparent;
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  box-shadow: 2px 2px 2px 2px #000;
+}
 .car-my,
 .car-e {
   flex: 33.33%;
