@@ -2,6 +2,7 @@
   background-color: #fff;
   color: black;
 }
+
 * {
   background-color: #0b0c10;
   box-sizing: border-box;
@@ -50,7 +51,6 @@ input:-webkit-autofill {
 input:focus {
   width: 90%;
 }
-
 recents {
   font-size: 32pt;
   color: #66fcf1;
@@ -213,6 +213,19 @@ p {
   overflow-y: scroll;
   overflow-x: hidden;
   border-radius: 10px;
+  position: relative;
+}
+.fa-download {
+  position: absolute;
+  right: 0;
+  left: 10;
+  bottom: 10%;
+  font-size: 40pt;
+  color: #fff;
+  background-color: transparent;
+}
+.fa-download:hover {
+  cursor: pointer;
 }
 .flex-item-right::-webkit-scrollbar-track {
   margin-top: 10px;
@@ -296,6 +309,11 @@ boxtext0 {
     margin: 1%;
     height: 50px;
     margin-bottom: 5%;
+  }
+  .fa-download {
+    position: relative;
+    font-size: 30pt;
+    bottom: 0;
   }
 }
 .dropbtn {
