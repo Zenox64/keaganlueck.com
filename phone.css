@@ -23,7 +23,8 @@ a:visited {
 }
 .car-my, .car-e, .car-x {
   margin-left: 10%;
-border-radius: 20px;}
+border-radius: 20px;
+margin-bottom: 1%;}
 .car-name {
   color: #aa4650;
 }

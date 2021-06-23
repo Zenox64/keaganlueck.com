@@ -82,14 +82,15 @@
       <center>
 <div class="flex-container">
   <div class="flex-item-left">
-<iframe width="80%" height="315" src="https://www.youtube.com/embed/WmE1Xo6uT-8" id="imgName" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<img src="BF-Pics(2021)/kyacart.jpg" class="main-pic" id="imgName" title="hover to zoom">
 <div class="description">
-    <p class="des-text">Aerial Vid</p>
+    <p class="des-text">Kya driving a go-kart</p>
 </div>
   </div>
     <div class="flex-item-right">
     <center style="background-color:#45a29e;"><boxtitle0><b style="background-color:#45a29e;"><u>info</u></b></boxtitle0></center>
-      <boxtext0>This video was shot on <a href="" >June 13, 2021</a> with <a href="dji-spark.html">DJI Spark</a> and is also apart of the <a href="bigfoot-resort-2021.html">Bigfoot Resort 2021</a> album</boxtext0>
+        <boxtext0>This photo was taken on <a href="" >June 19, 2021</a> with <a href="phone.html">Samsung Galaxy s20 FE</a> and is also apart of the <a href="bigfoot-resort-2021.html">Bigfoot Resort 2021</a> album</boxtext0>
+        <a href="#downloading-image" class="fas fa-download" download="BF-Pics(2021)/kyacart.jpg"></a>
     </center>
 
 
@@ -120,5 +121,42 @@
     </div>
     <script src="pics-gallery.js"></script>
     <!--<button onsubmit="changePictures()">submit</button>-->
-  </body>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
 </html>
