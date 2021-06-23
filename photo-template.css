@@ -50,10 +50,16 @@ input:-webkit-autofill {
 input:focus {
   width: 90%;
 }
+
 recents {
   font-size: 32pt;
   color: #66fcf1;
   font-family: monospace;
+}
+@media screen and (max-width: 550px) {
+  recents {
+    font-size: 21pt;
+  }
 }
 .navbar {
   font-size: 18px;
