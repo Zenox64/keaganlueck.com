@@ -214,6 +214,10 @@ counter.innerHTML = numberOfPics + " pictures and counting";
 //pic name as header 
 var mainPicName = document.getElementById("imgName").getAttribute("src");
 imgNameHeader.textContent = mainPicName;
+
+function goBack() {
+  window.history.back();
+}
 /*
 window.onload = function () {
   var name = prompt("How many pictures do you want it to display?");
