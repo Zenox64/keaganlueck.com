@@ -218,6 +218,9 @@ imgNameHeader.textContent = mainPicName;
 function goBack() {
   window.history.back();
 }
+function downloadImg() {
+
+}
 /*
 window.onload = function () {
   var name = prompt("How many pictures do you want it to display?");
