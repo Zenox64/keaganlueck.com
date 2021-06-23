@@ -121,3 +121,7 @@ console.log(electricityCostConv      )
 function dynamicPricePerKWH() {
   alert(electricityCost);
 }
+
+function goBack() {
+  window.history.back();
+}
