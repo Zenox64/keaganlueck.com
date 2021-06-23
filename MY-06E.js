@@ -21,7 +21,7 @@ function expeditionTires() {
   var expeditionConv = exped.toLocaleString();
   expedition.textContent = "$" + expeditionConv;
   //model y tires
-  var yPowerConsumption = 8333.28;
+  var yPowerConsumption = document.getElementById("electricityInputPrice").value * 69444;
   var yBuyPrice = 50000;
   var change = 1000;
   var yTires = change * amount;
@@ -34,7 +34,7 @@ function expeditionTires() {
 //modely
 var amount = document.getElementById("input").value;
 
-var yPowerConsumption = 8333.28;
+var yPowerConsumption = document.getElementById("electricityInputPrice").value * 69444;
 var yBuyPrice = 50000;
 var change = 1000;
 var yTires = change * amount;
@@ -46,7 +46,7 @@ modely.textContent = "$" + mY;
 
 var i = 1;
 function modelYTaxBreak() {
-  var yPowerConsumption = 8333.28;
+  var yPowerConsumption = document.getElementById("electricityInputPrice").value * 69444;
   var yBuyPrice = 50000;
   i++;
   //below if there is a remainder of zero it will run, this is a note to self
@@ -113,13 +113,25 @@ function dynamicGasPrice() {
   console.log(oilPrice);
   console.log(buyPriceNum);*/
 }
+//electricity charge costs
 var electricityCost =
-  document.getElementById("electrictyInputPrice").value * 69444;
+  document.getElementById("electricityInputPrice").value * 69444;
   var electricityCostConv = electricityCost.toLocaleString();
 mYPricePer.textContent = '$' + electricityCostConv;
-console.log(electricityCostConv      )
 function dynamicPricePerKWH() {
-  alert(electricityCost);
+  //getting all the other variables
+  var yBuyPrice = document.getElementById("yBuyPrice").value * 1;
+  var yTires = document.getElementById("input").value * 1000;
+
+  var electricityCost =
+  document.getElementById("electricityInputPrice").value * 69444;
+  var modelYTotalCost = yBuyPrice + yTires + electricityCost;
+
+  modelYTotalCostConv = modelYTotalCost.toLocaleString();
+  modely.textContent = '$' + modelYTotalCostConv;
+  electricityCostConv = electricityCost.toLocaleString();
+  mYPricePer.textContent = '$' + electricityCostConv;
+
 }
 
 function goBack() {
