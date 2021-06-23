@@ -61,6 +61,11 @@ recents {
     font-size: 21pt;
   }
 }
+@media screen and (max-width: 359px){
+  recents {
+    font-size: 15pt;
+  }
+}
 .navbar {
   font-size: 18px;
   border: 1px solid #66fcf1;
@@ -275,7 +280,7 @@ boxtext0 {
 }
 @media (max-width: 1023px) {
   .main-pic, .description {
-    width: 40%;
+    width: 48%;
   }
   .flex-container {
     flex-direction: column;
