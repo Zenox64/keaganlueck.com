@@ -12,6 +12,7 @@ h1,
 a {
   color: #45a29e;
   font-family: monospace;
+  text-decoration: none;
 }
 ul {
   color: #45a29e;
@@ -265,4 +266,17 @@ body::-webkit-scrollbar-thumb {
   .sidenav a {
     font-size: 18px;
   }
+}
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #45a29e;
+  outline: 0px solid slategrey;
+  border-radius: 30px;
 }
