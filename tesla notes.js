@@ -24,8 +24,24 @@ input.addEventListener("keydown", (event) => {
   event.preventDefault();
   event.stopPropagation();
   updateOutput();
-  if (text === "delete") {
-    output.innerHTML = "";
-  }
 });
 addButton.addEventListener("click", updateOutput);
+
+function save() {
+  var textboxContent = document.getElementById("input").value;
+  localStorage.setItem("textboxContent", textboxContent);
+}
+function load() {
+  var textboxContent = localStorage.getItem("textboxContent");
+  console.log(textboxContent);
+  output.innerHTML += "<li>" + textboxContent + "</li>" + "\n";
+  output.style.color = "white";
+  input.value = "";
+}
+function savedText() {
+    var textboxContent = localStorage.getItem("textboxContent");
+  console.log(textboxContent);
+  output.innerHTML += "<li>" + textboxContent + "</li>" + "\n";
+  output.style.color = "white";
+  input.value = "";
+}

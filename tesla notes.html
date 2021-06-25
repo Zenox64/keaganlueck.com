@@ -19,7 +19,7 @@
       gtag("config", "G-DC5J9BBV64");
     </script>
   </head>
-  <body>
+  <body onload="savedText()">
     <div class="sexy">
       <a href="index.html"
         ><h1>
@@ -49,6 +49,8 @@
       </center>
       <button type="submit" id="addButton">Add Note</button>
     </form>
+    <button onclick="save()">Save</button>
+    <button onclick="load()">Load</button>
     <div class="footer">
       <center>
         <p>

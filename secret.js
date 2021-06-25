@@ -8,7 +8,6 @@ function hideImg(){
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
-
 /* Set the width of the side navigation to 0 */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
@@ -267,3 +266,7 @@ const baby = new Person();
 console.log(baby.bornOn.toLocaleString());
 Math.floor(age); // 3/9/2021, 1:35:50 PM
 document.getElementById("age").textContent = Math.floor(age);
+
+/*$(document).ready(function() {
+  $("body").hide().delay(500).fadeIn(3000)
+})*/

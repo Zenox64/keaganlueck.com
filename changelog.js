@@ -163,3 +163,6 @@ function pressed(e) {
   }
   jr.value = "";
 }
+$(document).ready(function () {
+  $('.li, .date').hide().fadeIn(2000);
+})
