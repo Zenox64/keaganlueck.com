@@ -37,7 +37,7 @@ var yPowerConsumption = document.getElementById("electricityInputPrice").value *
 
 var yBuyPrice = 50000;
 var ModelYBuyPrice = yBuyPrice.toLocaleString();
-document.getElementById('yBuyPrice').textContent = "$" + ModelYBuyPrice;
+document.getElementById('modelYBuyPrice').textContent = "$" + ModelYBuyPrice;
 
 var change = 1000;
 var yTires = change * amount;
@@ -50,7 +50,7 @@ modely.textContent = "$" + mY;
 var i = 1;
 function modelYTaxBreak() {
   var yPowerConsumption = document.getElementById("electricityInputPrice").value * 69444;
-  var yBuyPrice = document.getElementById('yBuyPrice').value;
+  var yBuyPrice = document.getElementById("modelYBuyPrice").value * 1;
   i++;
   //below if there is a remainder of zero it will run, this is a note to self
   //for future reference
@@ -123,9 +123,8 @@ var electricityCost =
 mYPricePer.textContent = '$' + electricityCostConv;
 function dynamicPricePerKWH() {
   //getting all the other variables
-  var yBuyPrice = document.getElementById("yBuyPrice").value * 1;
+  var yBuyPrice = document.getElementById("modelYBuyPrice").value * 1;
   var yTires = document.getElementById("input").value * 1000;
-
   var electricityCost =
   document.getElementById("electricityInputPrice").value * 69444;
   var modelYTotalCost = yBuyPrice + yTires + electricityCost;
