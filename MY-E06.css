@@ -6,6 +6,9 @@ body {
   color: #fff;
   text-shadow: none;
 }
+.inline {
+  display: inline;
+}
 .body-title,
 a:visited {
   color: #00527e;
