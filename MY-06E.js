@@ -24,7 +24,7 @@ function expeditionTires() {
   //model y tires
   var yPowerConsumption =
     document.getElementById("electricityInputPrice").value * 62833;
-  var yBuyPrice = 50000;
+  var yBuyPrice = 52990;
   var change = 1000;
   var yTires = change * amount;
   var tire = yTires.toLocaleString();
@@ -165,7 +165,7 @@ function vehicleRight() {
   var model3kwhUsageConv = model3kwhUsage.toLocaleString();
   mYPricePer.textContent = "$" + model3kwhUsageConv;
 
-  model3BuyPrice = 45000;
+  model3BuyPrice = 48990;
   model3BuyPriceConv = model3BuyPrice.toLocaleString();
   document.getElementById("modelYBuyPrice").textContent =
     "$" + model3BuyPriceConv;
@@ -194,21 +194,21 @@ function vehicleLeft() {
     "2021 Tesla Model Y vs 2006 Ford Expedition at 250,000 Miles";
   /*document.getElementById("colorWhite").style.display = "none";
     document.getElementById("colorRed").style.display = "none";*/
-  var modelYUsage = (document.getElementById("kwhUsage").value = 63883);
+  var modelYUsage = document.getElementById("kwhUsage").value = 63883;
   var modelYUsageConv = modelYUsage.toLocaleString();
   kwhUsage.textContent = modelYUsageConv;
-  var modelYkwhUsage = (document.getElementById("kwhUsage").value =
-    63883 * document.getElementById("electricityInputPrice").value);
+  var modelYkwhUsage = document.getElementById("kwhUsage").value =
+    63883 * document.getElementById("electricityInputPrice").value;
   var modelYkwhUsageConv = modelYkwhUsage.toLocaleString();
   mYPricePer.textContent = "$" + modelYkwhUsageConv;
 
-  modelYBuyPrice = 50000;
+  modelYBuyPrice = 52990;
   modelYBuyPriceConv = modelYBuyPrice.toLocaleString();
   document.getElementById("modelYBuyPrice").textContent =
     "$" + modelYBuyPriceConv;
 
   //buy price change
-  model3BuyPrice = 50000;
+  model3BuyPrice = 52990;
   model3BuyPriceConv = model3BuyPrice.toLocaleString();
   document.getElementById("modelYBuyPrice").textContent =
     "$" + model3BuyPriceConv;
@@ -218,7 +218,7 @@ function vehicleLeft() {
   moyTires.textContent = "$" + yTiresConv;
 
   var electricityCost =
-    document.getElementById("electricityInputPrice").value * 62883;
+    document.getElementById("electricityInputPrice").value * 63883;
   var modelYTotalCost = model3BuyPrice + yTires + electricityCost;
 
   model3TotalCostConv = modelYTotalCost.toLocaleString();
