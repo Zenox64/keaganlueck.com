@@ -34,6 +34,8 @@ function expeditionTires() {
   modely.textContent = "$" + mY;
 }
 //modely
+document.getElementById("carName").href = "21-my.png";
+
 var modelYkwhUsage = (document.getElementById("kwhUsage").value = 63883);
 var modelYkwhUsageConv = modelYkwhUsage.toLocaleString();
 
@@ -149,6 +151,7 @@ function goBack() {
   window.history.back();
 }
 function vehicleRight() {
+  document.getElementById("carName").href = "21-m3.png";
   document.getElementById("rightCar").src = "21-m3.png";
   var carNameOutput = document.getElementById("carName");
   var upMostHeaderOutput = document.getElementById("upmostHeader");
@@ -166,7 +169,7 @@ function vehicleRight() {
   model3BuyPriceConv = model3BuyPrice.toLocaleString();
   document.getElementById("modelYBuyPrice").textContent =
     "$" + model3BuyPriceConv;
-  var kwhUsageOutput = document.getElementById("kwhUsage").value = 58140;
+  var kwhUsageOutput = (document.getElementById("kwhUsage").value = 58140);
   var kwhUsageOutputConv = kwhUsageOutput.toLocaleString();
   document.getElementById("kwhUsage").textContent = kwhUsageOutputConv;
 
@@ -182,6 +185,7 @@ function vehicleRight() {
   modely.textContent = "$" + model3TotalCostConv;
 }
 function vehicleLeft() {
+  document.getElementById("carName").href = "21-my.png";
   document.getElementById("rightCar").src = "21-my.png";
   var carNameOutput = document.getElementById("carName");
   var upMostHeaderOutput = document.getElementById("upmostHeader");
@@ -190,14 +194,13 @@ function vehicleLeft() {
     "2021 Tesla Model Y vs 2006 Ford Expedition at 250,000 Miles";
   /*document.getElementById("colorWhite").style.display = "none";
     document.getElementById("colorRed").style.display = "none";*/
-    var modelYUsage = document.getElementById("kwhUsage").value = 63883;
-    var modelYUsageConv = modelYUsage.toLocaleString();
-    kwhUsage.textContent = modelYUsageConv;
-  var modelYkwhUsage = document.getElementById("kwhUsage").value =
-    63883 * document.getElementById("electricityInputPrice").value;
+  var modelYUsage = (document.getElementById("kwhUsage").value = 63883);
+  var modelYUsageConv = modelYUsage.toLocaleString();
+  kwhUsage.textContent = modelYUsageConv;
+  var modelYkwhUsage = (document.getElementById("kwhUsage").value =
+    63883 * document.getElementById("electricityInputPrice").value);
   var modelYkwhUsageConv = modelYkwhUsage.toLocaleString();
   mYPricePer.textContent = "$" + modelYkwhUsageConv;
-
 
   modelYBuyPrice = 50000;
   modelYBuyPriceConv = modelYBuyPrice.toLocaleString();
