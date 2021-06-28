@@ -35,6 +35,8 @@ function expeditionTires() {
 }
 //modely
 document.getElementById("carName").href = "21-my.png";
+document.getElementById('m3Button').style.display = "none";
+
 
 var modelYkwhUsage = (document.getElementById("kwhUsage").value = 63883);
 var modelYkwhUsageConv = modelYkwhUsage.toLocaleString();
@@ -127,21 +129,7 @@ function dynamicGasPrice() {
   console.log(buyPriceNum);*/
 }
 
-function dynamicPricePerKWH() {
-  //getting all the other variables
-  var yBuyPrice = document.getElementById("modelYBuyPrice").value * 1;
-  var yTires = document.getElementById("input").value * 1000;
-  var electricityCost =
-    document.getElementById("electricityInputPrice").value *
-    document.getElementById("kwhUsage").value;
-  console.log(electricityCost);
-  var modelYTotalCost = yBuyPrice + yTires + electricityCost;
-
-  modelYTotalCostConv = modelYTotalCost.toLocaleString();
-  modely.textContent = "$" + modelYTotalCostConv;
-  electricityCostConv = electricityCost.toLocaleString();
-  mYPricePer.textContent = "$" + electricityCostConv;
-} /*
+ /*
 function displayNone() {
 document.getElementById("colorWhite").style.display = "none";
 document.getElementById("colorRed").style.display = "none";
@@ -151,6 +139,8 @@ function goBack() {
   window.history.back();
 }
 function vehicleRight() {
+  document.getElementById("m3Button").style.display = "inline-block";
+  document.getElementById("mYButton").style.display = "none";
   document.getElementById("carName").href = "21-m3.png";
   document.getElementById("rightCar").src = "21-m3.png";
   var carNameOutput = document.getElementById("carName");
@@ -185,6 +175,8 @@ function vehicleRight() {
   modely.textContent = "$" + model3TotalCostConv;
 }
 function vehicleLeft() {
+    document.getElementById("mYButton").style.display = "inline-block";
+    document.getElementById("m3Button").style.display = "none";
   document.getElementById("carName").href = "21-my.png";
   document.getElementById("rightCar").src = "21-my.png";
   var carNameOutput = document.getElementById("carName");
@@ -229,4 +221,32 @@ function colorToWhite() {
 }
 function colorToRed() {
   document.getElementById("rightCar").src = "21-m3.png";
+}
+function mYdynamicPricePerKWH() {
+  //getting all the other variables
+  var yBuyPrice = document.getElementById("modelYBuyPrice").value * 1;
+  var yTires = document.getElementById("input").value * 1000;
+  var electricityCost =
+    document.getElementById("electricityInputPrice").value * 63883;
+  console.log(electricityCost);
+  var modelYTotalCost = yBuyPrice + yTires + electricityCost;
+
+  modelYTotalCostConv = modelYTotalCost.toLocaleString();
+  modely.textContent = "$" + modelYTotalCostConv;
+  electricityCostConv = electricityCost.toLocaleString();
+  mYPricePer.textContent = "$" + electricityCostConv;
+}
+function m3dynamicPricePerKWH() {
+  //getting all the other variables
+  var yBuyPrice = document.getElementById("modelYBuyPrice").value * 1;
+  var yTires = document.getElementById("input").value * 1000;
+  var electricityCost =
+    document.getElementById("electricityInputPrice").value * 58140;
+  console.log(electricityCost);
+  var modelYTotalCost =  48990 + yTires + electricityCost;
+
+  modelYTotalCostConv = modelYTotalCost.toLocaleString();
+  modely.textContent = "$" + modelYTotalCostConv;
+  electricityCostConv = electricityCost.toLocaleString();
+  mYPricePer.textContent = "$" + electricityCostConv;
 }
