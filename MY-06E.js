@@ -23,15 +23,15 @@ function expeditionTires() {
   expedition.textContent = "$" + expeditionConv;
   //model y tires
   var yPowerConsumption =
-    document.getElementById("electricityInputPrice").value * 62833;
-  var yBuyPrice = 52990;
-  var change = 1000;
-  var yTires = change * amount;
-  var tire = yTires.toLocaleString();
-  moyTires.textContent = "$" + tire;
+    document.getElementById("electricityInputPrice").value *
+    document.getElementById("kwhUsage").value;
+  var yBuyPrice = document.getElementById("modelYBuyPrice").value * 1;
+  var yTires = document.getElementById("input").value * 1000;
   var modelY = yPowerConsumption + yBuyPrice + yTires;
   var mY = modelY.toLocaleString();
   modely.textContent = "$" + mY;
+  var tire = yTires.toLocaleString();
+  moyTires.textContent = "$" + tire;
 }
 //modely
 document.getElementById("carName").href = "21-my.png";
@@ -77,9 +77,6 @@ function modelYTaxBreak() {
     document.getElementById("taxBreak").style.background = "#00527E";
     document.getElementById("taxBreak").style.color = "white";
     document.getElementById("taxBreak").style.fontWeight = "500";
-    console.log(yPowerConsumption, yBuyPrice, yTires);
-    console.log(document.getElementById("electricityInputPrice").value);
-     console.log((document.getElementById("kwhUsage").value));
   } else {
     taxBreak.innerHTML = "calculate with 5k tax credit";
     var modelY = yPowerConsumption + yBuyPrice + yTires;
@@ -151,8 +148,8 @@ function vehicleRight() {
     "2021 Tesla Model 3 vs 2006 Ford Expedition at 250,000 Miles";
   /*document.getElementById("colorWhite").style.display = "inline-block";
     document.getElementById("colorRed").style.display = "inline-block";*/
-  var model3kwhUsage = document.getElementById("kwhUsage").value =
-    58140 * document.getElementById("electricityInputPrice").value;
+  var model3kwhUsage = (document.getElementById("kwhUsage").value =
+    58140 * document.getElementById("electricityInputPrice").value);
   var model3kwhUsageConv = model3kwhUsage.toLocaleString();
   mYPricePer.textContent = "$" + model3kwhUsageConv;
 
@@ -160,8 +157,8 @@ function vehicleRight() {
   model3BuyPriceConv = model3BuyPrice.toLocaleString();
   document.getElementById("modelYBuyPrice").textContent =
     "$" + model3BuyPriceConv;
-  
-    var kwhUsageOutput = document.getElementById("kwhUsage").value = 58140;
+
+  var kwhUsageOutput = (document.getElementById("kwhUsage").value = 58140);
   var kwhUsageOutputConv = kwhUsageOutput.toLocaleString();
   document.getElementById("kwhUsage").textContent = kwhUsageOutputConv;
 
@@ -197,8 +194,8 @@ function vehicleLeft() {
   /*document.getElementById("colorWhite").style.display = "none";
     document.getElementById("colorRed").style.display = "none";*/
 
-  var modelYkwhUsage = document.getElementById("kwhUsage").value =
-    62883 * document.getElementById("electricityInputPrice").value;
+  var modelYkwhUsage = (document.getElementById("kwhUsage").value =
+    62883 * document.getElementById("electricityInputPrice").value);
   var modelYkwhUsageConv = modelYkwhUsage.toLocaleString();
   mYPricePer.textContent = "$" + modelYkwhUsageConv;
 
@@ -229,7 +226,6 @@ function vehicleLeft() {
   document.getElementById("taxBreak").style.fontWeight = "bolder";
   model3TotalCostConv = modelYTotalCost.toLocaleString();
   modely.textContent = "$" + model3TotalCostConv;
-  console.log(model3BuyPrice, electricityCost, yTires, modelYkwhUsage);
 }
 function colorToWhite() {
   document.getElementById("rightCar").src = "21-m3(white).png";
