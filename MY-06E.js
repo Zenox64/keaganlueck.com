@@ -60,27 +60,28 @@ moyTires.textContent = "$" + yTiresConv;
 var i = 1;
 function modelYTaxBreak() {
   var yPowerConsumption =
-    document.getElementById("electricityInputPrice").value * 62833;
+    document.getElementById("electricityInputPrice").value *
+    document.getElementById("kwhUsage").value;
   var text = document.getElementById("kwhUsage").value;
   var yBuyPrice = document.getElementById("modelYBuyPrice").value * 1;
+  var tireValue = document.getElementById("input").value;
+  var yTires = tireValue * 1000;
   i++;
   //below if there is a remainder of zero it will run, this is a note to self
   //for future reference
   if (i % 2 == 0) {
-      var tireValue = document.getElementById("input").value;
-      var yTires = tireValue * 1000;
-      taxBreak.innerHTML = "calculate without 5k tax credit";
-      var modelY = yPowerConsumption + yBuyPrice + yTires - 5000;
-      var mY = modelY.toLocaleString();
-      modely.textContent = "$" + mY;
-      document.getElementById("taxBreak").style.background = "#00527E";
-      document.getElementById("taxBreak").style.color = "white";
-      document.getElementById("taxBreak").style.fontWeight = "500";
-    //console.log(yTires);
+    taxBreak.innerHTML = "calculate without 5k tax credit";
+    var modelY = yPowerConsumption + yBuyPrice + yTires - 5000;
+    var mY = modelY.toLocaleString();
+    modely.textContent = "$" + mY;
+    document.getElementById("taxBreak").style.background = "#00527E";
+    document.getElementById("taxBreak").style.color = "white";
+    document.getElementById("taxBreak").style.fontWeight = "500";
+    console.log(yPowerConsumption, yBuyPrice, yTires);
+    console.log(document.getElementById("electricityInputPrice").value);
+     console.log((document.getElementById("kwhUsage").value));
   } else {
     taxBreak.innerHTML = "calculate with 5k tax credit";
-    var tireValue = document.getElementById("input").value;
-    var yTires = tireValue * 1000;
     var modelY = yPowerConsumption + yBuyPrice + yTires;
     var mY = modelY.toLocaleString();
     modely.textContent = "$" + mY;
@@ -150,8 +151,8 @@ function vehicleRight() {
     "2021 Tesla Model 3 vs 2006 Ford Expedition at 250,000 Miles";
   /*document.getElementById("colorWhite").style.display = "inline-block";
     document.getElementById("colorRed").style.display = "inline-block";*/
-  var model3kwhUsage = (document.getElementById("kwhUsage").value =
-    58140 * document.getElementById("electricityInputPrice").value);
+  var model3kwhUsage = document.getElementById("kwhUsage").value =
+    58140 * document.getElementById("electricityInputPrice").value;
   var model3kwhUsageConv = model3kwhUsage.toLocaleString();
   mYPricePer.textContent = "$" + model3kwhUsageConv;
 
@@ -159,7 +160,8 @@ function vehicleRight() {
   model3BuyPriceConv = model3BuyPrice.toLocaleString();
   document.getElementById("modelYBuyPrice").textContent =
     "$" + model3BuyPriceConv;
-  var kwhUsageOutput = (document.getElementById("kwhUsage").value = 58140);
+  
+    var kwhUsageOutput = document.getElementById("kwhUsage").value = 58140;
   var kwhUsageOutputConv = kwhUsageOutput.toLocaleString();
   document.getElementById("kwhUsage").textContent = kwhUsageOutputConv;
 
@@ -171,6 +173,14 @@ function vehicleRight() {
     document.getElementById("electricityInputPrice").value * kwhUsageOutput;
   var modelYTotalCost = model3BuyPrice + yTires + electricityCost;
 
+  model3TotalCostConv = modelYTotalCost.toLocaleString();
+  modely.textContent = "$" + model3TotalCostConv;
+
+  //default button
+  taxBreak.innerHTML = "calculate with 5k tax credit";
+  document.getElementById("taxBreak").style.background = "transparent";
+  document.getElementById("taxBreak").style.color = "#00527E";
+  document.getElementById("taxBreak").style.fontWeight = "bolder";
   model3TotalCostConv = modelYTotalCost.toLocaleString();
   modely.textContent = "$" + model3TotalCostConv;
 }
@@ -186,11 +196,9 @@ function vehicleLeft() {
     "2021 Tesla Model Y vs 2006 Ford Expedition at 250,000 Miles";
   /*document.getElementById("colorWhite").style.display = "none";
     document.getElementById("colorRed").style.display = "none";*/
-  var modelYUsage = (document.getElementById("kwhUsage").value = 62883);
-  var modelYUsageConv = modelYUsage.toLocaleString();
-  kwhUsage.textContent = modelYUsageConv;
-  var modelYkwhUsage = (document.getElementById("kwhUsage").value =
-    62883 * document.getElementById("electricityInputPrice").value);
+
+  var modelYkwhUsage = document.getElementById("kwhUsage").value =
+    62883 * document.getElementById("electricityInputPrice").value;
   var modelYkwhUsageConv = modelYkwhUsage.toLocaleString();
   mYPricePer.textContent = "$" + modelYkwhUsageConv;
 
@@ -211,10 +219,17 @@ function vehicleLeft() {
 
   var electricityCost =
     document.getElementById("electricityInputPrice").value * 62883;
-  var modelYTotalCost = model3BuyPrice + yTires + electricityCost;
+  var modelYTotalCost = modelYBuyPrice + yTires + electricityCost;
 
+  document.getElementById("kwhUsage").value = 62883;
+
+  taxBreak.innerHTML = "calculate with 5k tax credit";
+  document.getElementById("taxBreak").style.background = "transparent";
+  document.getElementById("taxBreak").style.color = "#00527E";
+  document.getElementById("taxBreak").style.fontWeight = "bolder";
   model3TotalCostConv = modelYTotalCost.toLocaleString();
   modely.textContent = "$" + model3TotalCostConv;
+  console.log(model3BuyPrice, electricityCost, yTires, modelYkwhUsage);
 }
 function colorToWhite() {
   document.getElementById("rightCar").src = "21-m3(white).png";
@@ -229,7 +244,7 @@ function mYdynamicPricePerKWH() {
   var electricityCost =
     document.getElementById("electricityInputPrice").value * 62883;
   console.log(electricityCost);
-  var modelYTotalCost = yBuyPrice + yTires + electricityCost;
+  var modelYTotalCost = 52990 + yTires + electricityCost;
 
   modelYTotalCostConv = modelYTotalCost.toLocaleString();
   modely.textContent = "$" + modelYTotalCostConv;
