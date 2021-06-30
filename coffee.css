@@ -7,3 +7,6 @@ button {
 .all-outlet-select:focus {
     color: green;
 }
+.size-select:focus {
+    color: green;
+}                             
