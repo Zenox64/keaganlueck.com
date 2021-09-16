@@ -154,6 +154,9 @@ function pressed(e) {
     case "contact":
       window.location.replace((url = "phone.html"));
       break;
+      case "photography":
+        window.location.replace((url = "photography-class.html"));
+        break;
     default:
       tesla.innerHTML = "";
       header.innerHTML = greeting;
