@@ -71,7 +71,7 @@ function pressed(e) {
       sneak.play();
       break;
     case "errday":
-      const errday = new Audio("errday.mp3");
+      const errday = new Audio("");
       errday.play();
       break;
     case "pics":
