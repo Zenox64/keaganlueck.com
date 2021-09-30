@@ -6,6 +6,7 @@
   display: flex;
   color: black;
   justify-content: space-between;
+  margin-bottom: 1%;
 }
 .click {
 font-size: 12pt;
