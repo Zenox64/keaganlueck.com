@@ -198,7 +198,12 @@ p {
   object-fit: cover;
   transition: opacity 0.25s ease-in-out;
 }
-
+.gallery-main {
+    max-width: 350%;
+  height: auto;
+  object-fit: cover;
+  transition: opacity 0.25s ease-in-out;
+}
 .gallery-img:hover {
   opacity: 0.6;
   cursor: pointer;
@@ -446,3 +451,4 @@ body::-webkit-scrollbar-thumb {
     font-size: 18px;
   }
 }
+
