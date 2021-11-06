@@ -1,4 +1,3 @@
-
 /*var text = document.getElementById("input").value;
 function changingText() {
   text.value = answer;
@@ -211,16 +210,14 @@ numberOfPics = myPix.length;
 console.log(numberOfPics);
 counter.innerHTML = numberOfPics + " pictures and counting";
 
-//pic name as header 
+//pic name as header
 var mainPicName = document.getElementById("imgName").getAttribute("src");
 imgNameHeader.textContent = mainPicName;
 
 function goBack() {
   window.history.back();
 }
-function downloadImg() {
-
-}
+function downloadImg() {}
 /*
 window.onload = function () {
   var name = prompt("How many pictures do you want it to display?");
@@ -365,6 +362,9 @@ function pressed(e) {
       break;
     case "contact":
       window.location.replace((url = "contact.html"));
+      break;
+    case "photography":
+      window.location.replace((url = "photography-class.html"));
       break;
     default:
       tesla.innerHTML = "";

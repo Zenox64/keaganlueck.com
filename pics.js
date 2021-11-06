@@ -390,6 +390,9 @@ function pressed(e) {
     case "photo gallery":
       window.location.replace((url = "pics-gallery.html"));
       break;
+    case "photography":
+      window.location.replace((url = "photography-class.html"));
+      break;
     default:
       tesla.innerHTML = "";
       header.innerHTML = greeting;

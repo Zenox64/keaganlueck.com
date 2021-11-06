@@ -149,7 +149,9 @@ function pressed(e) {
     case "photo gallery":
       window.location.replace((url = "pics-gallery.html"));
       break;
-      TODO;
+    case "photography":
+      window.location.replace((url = "photography-class.html"));
+      break;
     default:
       tesla.innerHTML = "";
       header.innerHTML = greeting;
@@ -164,5 +166,5 @@ function pressed(e) {
   jr.value = "";
 }
 $(document).ready(function () {
-  $('.li, .date').hide().fadeIn(2000);
-})
+  $(".li, .date").hide().fadeIn(2000);
+});

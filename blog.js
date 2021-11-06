@@ -160,6 +160,9 @@ function pressed(e) {
     case "contact":
       window.location.replace((url = "contact.html"));
       break;
+    case "photography":
+      window.location.replace((url = "photography-class.html"));
+      break;
     default:
       tesla.innerHTML = "";
       header.innerHTML = greeting;
