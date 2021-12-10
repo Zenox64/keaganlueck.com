@@ -157,6 +157,9 @@ function pressed(e) {
       case "photography":
         window.location.replace((url = "photography-class.html"));
         break;
+      case "convert":
+        window.location.replace((url = "celsius-fahrenheit.html"));
+        break;
     default:
       tesla.innerHTML = "";
       header.innerHTML = greeting;
