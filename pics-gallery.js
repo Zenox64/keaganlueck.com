@@ -2,11 +2,36 @@ var output = document.getElementById("output");
 var input = document.getElementById("inputFar");
 input.addEventListener("input", convert);
 function convert() {
+  var inputNum = parseInt(input);
+  console.log(inputNum);
+  console.log(Math.sign(inputNum));
   var input = document.getElementById("inputFar").value;
   var outputCels = ((input - 32) * 5) / 9;
   if (isNaN(outputCels) === true) {
     output.textContent = "Please enter a number";
+    output.style.color = "white";
   } else {
+    if (input >= 33 && input <= 48) {
+      output.style.color = "#00f8fe";
+    } else if (input >= 49 && input <= 55) {
+      output.style.color = "#008101";
+    } else if (input >= 56 && input <= 62) {
+      output.style.color = "#eff700";
+    } else if (input >= 63 && input <= 68) {
+      output.style.color = "#ff8a00";
+    } else if (input >= 69 && input <= 90) {
+      output.style.color = "#ff0e0e";
+    } else if (input <= 31) {
+      output.style.color = "#008aff";
+    } else if (input <= 28 && input >= 18) {
+      output.style.color = "#0043ff";
+    } else if (input <= 17 && input >= 0) {
+      output.style.color = "#6b00ff";
+    } else if (Math.sign(input) = -1) {
+      output.style.color = "#480048";
+    } else {
+      output.style.color = "white";
+    }
     var outputCelsRound = Math.round(10 * outputCels) / 10;
     output.textContent = outputCelsRound + "\u00B0" + " C";
   }
