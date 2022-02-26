@@ -2,7 +2,7 @@
   background-color: #fff;
   color: black;
 }
-.nav-links::after {
+.nav-links::after, .logo::after, .drop-txt::after {
   content: none;
 }
 a::after{
@@ -209,6 +209,7 @@ i {
   text-decoration: none;
   display: block;
   font-family: monospace;
+
 }
 
 /* Change color of dropdown links on hover */
@@ -216,6 +217,7 @@ i {
   background-color: #fff;
   cursor: pointer;
   color: #000;
+
 }
 
 /* Show the dropdown menu on hover */
@@ -223,6 +225,7 @@ i {
   display: block;
   cursor: pointer;
   color: black;
+
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
@@ -230,6 +233,7 @@ i {
   background-color: #fff;
   color: black;
   cursor: pointer;
+
 }
 .flex-container {
   display: flex;
