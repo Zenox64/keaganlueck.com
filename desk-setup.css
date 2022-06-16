@@ -25,7 +25,9 @@ img:active {
 .second {
   display: none;
 }
-
+.img1 {
+  width: 70%;
+}
 @media screen and (max-width: 800px) {
 .both-img {
   display: block;
