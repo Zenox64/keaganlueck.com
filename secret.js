@@ -1,8 +1,8 @@
 function showImg() {
   document.getElementById("hiddenImg").style.display = "inline-block";
 }
-function hideImg(){
-  document.getElementById("hiddenImg").style.display = "none"
+function hideImg() {
+  document.getElementById("hiddenImg").style.display = "none";
 }
 /* Set the width of the side navigation to 250px */
 function openNav() {
@@ -110,8 +110,12 @@ function pressed(e) {
       window.location.replace((url = "desk-setup.html"));
       break;
     case "rubiks guide":
+      window.location.replace((url = "rubiks-guide.pdf"));
+      break;
+    case "cube in cube":
       window.location.replace(
-        (url = "rubiks-guide.pdf")
+        (url =
+          "https://ruwix.com/the-rubiks-cube/rubiks-cube-patterns-algorithms/")
       );
       break;
     case "center swap":
@@ -153,12 +157,12 @@ function pressed(e) {
     case "contact":
       window.location.replace((url = "phone.html"));
       break;
-      case "photography":
-        window.location.replace((url = "photography-class.html"));
-        break;
-      case "convert":
-        window.location.replace((url = "celsius-fahrenheit.html"));
-        break;
+    case "photography":
+      window.location.replace((url = "photography-class.html"));
+      break;
+    case "convert":
+      window.location.replace((url = "celsius-fahrenheit.html"));
+      break;
     default:
       tesla.innerHTML = "";
       header.innerHTML = greeting;
