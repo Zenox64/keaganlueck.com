@@ -2,6 +2,10 @@
   background-color: #fff;
   color: black;
 }
+[data-src] {
+  min-width: 50px;
+  min-height: 50px;
+}
 * {
   background-color: #0b0c10;
   box-sizing: border-box;

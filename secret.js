@@ -111,8 +111,7 @@ function pressed(e) {
       break;
     case "rubiks guide":
       window.location.replace(
-        (url =
-          "https://www.rubiks.com/en-us/blog/how-to-solve-the-rubiks-cube-stage-5")
+        (url = "rubiks-guide.pdf")
       );
       break;
     case "center swap":
