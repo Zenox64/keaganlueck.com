@@ -130,7 +130,7 @@ sidebartxt {
   float: right;
   margin-top: -25%;
   margin-right: 7%;
-  max-width: 450px;
+  max-width: 400px;
 }
 /* archive*/
 .flex-container {
@@ -255,7 +255,7 @@ archivedate {
 
 @media screen and (max-width: 1520px) {
   sidebartxt {
-    width: 400px;
+    max-width: 300px;
   }
   .archive {
     height: 15rem
@@ -279,12 +279,14 @@ archivedate {
   sneakpeek {
     bottom: 7rem;
   }
+  sidebartxt {
+    max-width: 200px;
+  }
 }
 
 @media screen and (max-width: 1202px) {
   .archive {
-    max-height: 22.5rem;
-    min-height: 0.5rem;
+    height: auto;
   }
   archivetxt,
   archivedate {
@@ -294,7 +296,7 @@ archivedate {
     bottom: 5rem;
   }
   sidebartxt {
-    margin-left: 50%;
+    margin-left: 30%;
     margin-top: -30%;
   }
   .dropbtn {
@@ -305,7 +307,7 @@ archivedate {
 /*iPad Responsiveness*/
 @media screen and (max-width: 950px) {
   .archive {
-    height: 7rem;
+    max-height: 7rem;
   }
   sidebartxt {
     font-size: 12pt;
@@ -329,7 +331,6 @@ archivedate {
   }
   sidebartxt {
     font-size: 20pt;
-    width: 400px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -344,7 +345,7 @@ archivedate {
     bottom: 3rem;
   }
   sneakpeek {
-    left: 5%;
+    left: 22%;
   }
 }
 @media screen and (max-width: 499px) {
@@ -366,7 +367,7 @@ archivedate {
   }
   sidebartxt {
     font-size: 14pt;
-    width: 150px;
+    max-width: 150px;
   }
 }
 @media screen and (max-width: 391px) {
@@ -391,7 +392,7 @@ archivedate {
   }
   sidebartxt {
     font-size: 14pt;
-    width: 150px;
+    max-width: 150px;
   }
 }
 @media screen and (max-width: 361px) {
@@ -435,7 +436,7 @@ archivedate {
   }
   sidebartxt {
     font-size: 14pt;
-    width: 140px;
+    max-width: 140px;
   }
 }
 /* Responsive layout - makes a two column-layout instead of four columns */
