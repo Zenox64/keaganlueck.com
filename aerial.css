@@ -2,6 +2,19 @@
   background-color: #fff;
   color: black;
 }
+numberstat {
+  display: block;
+  font-size: 7em;
+  font-weight: bold;
+  color: #fff;
+}
+description {
+  display: block;
+  font-size: 0.83em;
+  font-weight: normal;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.329);
+}
 u {
   background: transparent;
 }
@@ -181,8 +194,8 @@ i {
 }
 #header {
   font-family: "Pathway Gothic One", sans-serif;
-  font-size: 105px;
-  line-height: 1.5;
+  font-size: 60px;
+  line-height: 5.5;
 }
 
 .dropbtn {
