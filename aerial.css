@@ -196,8 +196,11 @@ i {
   font-family: "Pathway Gothic One", sans-serif;
   font-size: 60px;
   line-height: 5.5;
+  margin-bottom: -5%;
 }
-
+#geoLoc {
+  margin-bottom: 3.5%;
+}
 .dropbtn {
   background-color: transparent;
   color: #ffffffb3;
@@ -485,7 +488,9 @@ boxtext1 {
 
 @media screen and (max-width: 1430px) {
   #header {
-    font-size: 55pt;
+    font-size: 30pt;
+    line-height: normal;
+    margin-bottom: 1%;
   }
 }
 @media (max-width: 1060px) {
