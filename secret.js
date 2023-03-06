@@ -163,6 +163,9 @@ function pressed(e) {
     case "convert":
       window.location.replace((url = "celsius-fahrenheit.html"));
       break;
+    case "college art":
+      window.location.replace((url = "college-art.html"));
+      break;
     default:
       tesla.innerHTML = "";
       header.innerHTML = greeting;
