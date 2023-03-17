@@ -13,7 +13,9 @@ function getPosErr(err) {
   switch (err.code) {
     case err.PERMISSION_DENIED:
       alert("User denied the request for Geolocation.");
-      alert("Refresh and allow location to allow site to get wind speed. Location data is not stored")
+      alert(
+        "Refresh and allow location to allow site to get wind speed. Location data is not stored"
+      );
       break;
     case err.POSITION_UNAVAILABLE:
       alert("Location information is unavailable.");
@@ -50,9 +52,10 @@ function getPosSuccess(pos) {
       console.log(aqi);
       var windspeed = aqi["current"]["wind_mph"]; // gets only necessary data
       var town = aqi["location"]["name"];
+      var state = aqi["location"]["region"];
       console.log(town);
       console.log(windspeed); // display to console only the wind data
-      geoLoc.innerHTML = "in " + town;
+      geoLoc.innerHTML = "in " + town + ", " + state;
       document.getElementById("header").textContent =
         "<h1>Wind speed = </h1>" + windspeed;
 

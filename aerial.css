@@ -2,6 +2,9 @@
   background-color: #fff;
   color: black;
 }
+.top-img {
+    width: 70%;
+}
 numberstat {
   display: block;
   font-size: 7em;
@@ -89,7 +92,7 @@ body {
     opacity: 1;
   }
 }
-​ @-ms-keyframes fadeIn {
+​@-ms-keyframes fadeIn {
   0% {
     opacity: 0;
   }
@@ -465,6 +468,15 @@ i {
 }
 .projects {
   list-style-image: url("project-icon.png");
+}
+.drone {
+  list-style-image: url("drone-ico.png");
+}
+.none {
+    list-style-type: none;
+}
+.drone::marker { 
+    margin: 0;
 }
 boxtitle0 {
   font-size: 32pt;
