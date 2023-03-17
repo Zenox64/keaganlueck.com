@@ -27,6 +27,19 @@ function getPosErr(err) {
       alert("An unknown error occurred.");
   }
 }
+var vid = document.getElementById("video");
+var pic = document.getElementById("photo");
+var text = document.getElementById("catText");
+function switchPic() {
+  pic.style.display = "none";
+  vid.style.display = "block";
+  text.innerHTML = "video";
+}
+function switchVid() {
+  pic.style.display = "block";
+  vid.style.display = "none";
+  text.innerHTML = "photo";
+}
 // getCurrentPosition: Successful return
 //If location is not allowed
 //none of the scripts below run

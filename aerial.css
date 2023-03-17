@@ -5,6 +5,32 @@
 .top-img {
     width: 70%;
 }
+.work-photo, .work-video { 
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+#video {
+  display: none;
+}
+.leftBtn, .rtBtn {
+  background-color: #1f2833;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+  border: none;
+  color: #45a29e;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.171);
+}
+.leftBtn:hover, .rtBtn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #1f2833;
+  transition: 0.33s ease;
+}
+.rtBtn {
+  float: right;
+}
 numberstat {
   display: block;
   font-size: 7em;
