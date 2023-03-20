@@ -2,6 +2,12 @@
   background-color: #fff;
   color: black;
 }
+.header-title {
+  color: #45a29e;
+  font-family: monospace;
+  letter-spacing: 2px;
+  font-size: xx-large;
+}
 .top-img {
     width: 70%;
 }
