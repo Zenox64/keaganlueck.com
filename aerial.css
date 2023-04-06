@@ -1,4 +1,3 @@
-
 #current {
   background-color: #fff;
   color: black;
@@ -532,8 +531,11 @@ boxtitle1 {
 boxtext1 {
   font-family: monospace;
   color: #45a29e;
+  transition: all 5s ease-out;
 }
-
+boxtext1:hover {
+  cursor: pointer;
+}
 .email {
   font-size: 100%;
 }
