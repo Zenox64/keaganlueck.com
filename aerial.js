@@ -8,6 +8,37 @@ if (navigator.geolocation) {
   // IP address or prompt for city?
 }
 
+//lazy loading images below
+const images = document.querySelectorAll("[data-src]")
+
+function preloadImage(img) {
+  const src = img.getAttribute("data-src");
+  if(!src) {
+    return;
+  }
+  img.src = src;
+}
+
+const imgOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px 200px 0px"
+};
+
+const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      preloadImage(entry.target);
+      imgObserver.unobserve(entry.target);
+    }
+  })
+}, imgOptions);
+
+images.forEach(image => {
+  imgObserver.observe(image);
+});
+
 // getCurrentPosition: Error returned
 function getPosErr(err) {
   switch (err.code) {
@@ -39,6 +70,68 @@ function switchVid() {
   pic.style.display = "block";
   vid.style.display = "none";
   text.innerHTML = "photo";
+}
+
+// text copying function
+var phone = document.getElementById("phone");
+var email = document.getElementById("email");
+var mail = document.getElementById("mail");
+estyle = email.style;
+style = phone.style;
+mstyle = mail.style;
+function baseText() {
+  style.fontWeight = "normal";
+  style.fontStyle = "normal";
+  style.color = "#45a29e";
+  phone.textContent = "phone number: 507-430-0823";
+}
+function ebaseText() {
+  estyle.fontWeight = "normal";
+  estyle.fontStyle = "normal";
+  estyle.color = "#45a29e";
+  email.textContent = "email: keagan @ skyverion.com";
+}
+function mbaseText() {
+  mstyle.fontWeight = "normal";
+  mstyle.fontStyle = "normal";
+  mstyle.color = "#45a29e";
+  mail.textContent = "mailing: P.O. Box 32, Morgan, MN, 56266";
+}
+function copyTextHint() {
+  style.fontWeight = "bold";
+  style.fontStyle = "normal";
+  style.color = "#45a29e";
+  phone.textContent = "click to copy phone number";
+}
+function ecopyTextHint() {
+  estyle.fontWeight = "bold";
+  estyle.fontStyle = "normal";
+  estyle.color = "#45a29e";
+  email.textContent = "click to copy email";
+}
+function mcopyTextHint() {
+  mstyle.fontWeight = "bold";
+  mstyle.fontStyle = "normal";
+  mstyle.color = "#45a29e";
+  mail.textContent = "click to copy mailing address";
+}
+function copyText() {
+  style.fontWeight = "normal";
+  style.fontStyle = "italic";
+  navigator.clipboard.writeText("507-430-0823");
+  phone.textContent = "COPIED";
+}
+function ecopyText() {
+  estyle.fontWeight = "normal";
+  estyle.fontStyle = "italic";
+  navigator.clipboard.writeText("keagan@skyverion.com");
+  email.textContent = "COPIED";
+}
+function mcopyText() {
+  mail.textContent = "COPIED";
+  mstyle.fontWeight = "normal";
+  mstyle.fontStyle = "italic";
+  navigator.clipboard.writeText("P.O. Box 32, Morgan, MN, 56266");
 }
 // getCurrentPosition: Successful return
 //If location is not allowed

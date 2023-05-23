@@ -9,16 +9,18 @@
   font-size: xx-large;
 }
 .top-img {
-    width: 70%;
+  width: 70%;
 }
-.work-photo, .work-video { 
+.work-photo,
+.work-video {
   padding-bottom: 20px;
   padding-top: 20px;
 }
 #video {
   display: none;
 }
-.leftBtn, .rtBtn {
+.leftBtn,
+.rtBtn {
   background-color: #1f2833;
   border-radius: 30px;
   text-align: center;
@@ -28,7 +30,8 @@
   color: #45a29e;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.171);
 }
-.leftBtn:hover, .rtBtn:hover {
+.leftBtn:hover,
+.rtBtn:hover {
   cursor: pointer;
   background-color: white;
   color: #1f2833;
@@ -505,10 +508,10 @@ i {
   list-style-image: url("drone-ico.png");
 }
 .none {
-    list-style-type: none;
+  list-style-type: none;
 }
-.drone::marker { 
-    margin: 0;
+.drone::marker {
+  margin: 0;
 }
 boxtitle0 {
   font-size: 32pt;
@@ -528,6 +531,13 @@ boxtitle1 {
 boxtext1 {
   font-family: monospace;
   color: #45a29e;
+  transition: all 0.5s ease-out;
+}
+boxtext1:hover {
+  cursor: pointer;
+}
+.email {
+  font-size: 100%;
 }
 
 @media screen and (max-width: 1430px) {
