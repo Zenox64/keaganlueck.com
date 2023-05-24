@@ -20,6 +20,9 @@ h1 {
 #btnTxt:hover {
     cursor: pointer;
 }
+#phone:hover {
+    cursor: pointer;
+}
 #current {
   background-color: #fff;
   color: black;
