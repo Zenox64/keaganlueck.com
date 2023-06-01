@@ -27,4 +27,5 @@ function copyLink() {
   navigator.clipboard.writeText("www.keaganlueck.com/bonfire.html");
 }
 
-alert("Share this link with all of your friends")
+alert("If you plan on attending, bring s'mores supplies or something else like snacks or drinks")
+alert("Don't forget lawn chairs")
