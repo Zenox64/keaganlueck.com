@@ -2,7 +2,12 @@
   background-color: #fff;
   color: black;
 }
-
+.downloadBtn {
+  display: block;
+  font-family: monospace;
+  font-size: large;
+  margin-top: 5%;
+}
 * {
   background-color: #0b0c10;
   box-sizing: border-box;
@@ -275,7 +280,7 @@ boxtext0 {
   background-color: transparent;
   text-align: left;
   font-size: 18pt;
-  font-family: monospace
+  font-family: monospace;
 }
 @media screen and (max-width: 1025px) {
   .main-pic, .description {
