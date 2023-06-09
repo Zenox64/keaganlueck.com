@@ -2,11 +2,16 @@
   background-color: #fff;
   color: black;
 }
-.downloadBtn {
-  display: block;
-  font-family: monospace;
-  font-size: large;
+.button-parent {
   margin-top: 5%;
+  background-color: #f1f1f1;
+  height: 10%;
+  border-radius: 30px;
+  box-shadow: 6px 6px 6px 6px #000;
+}
+.downloadBtn {
+  font-family: monospace;
+  font-size: 25px;
 }
 * {
   background-color: #0b0c10;
@@ -66,7 +71,7 @@ recents {
     font-size: 18pt;
   }
 }
-@media screen and (max-width: 359px){
+@media screen and (max-width: 359px) {
   recents {
     font-size: 15pt;
   }
@@ -188,7 +193,7 @@ p {
   border-radius: 30px;
   width: 70%;
   box-shadow: 12px 12px 12px 12px #000;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 .main-pic:hover {
   transform: scale(1.5);
@@ -283,7 +288,8 @@ boxtext0 {
   font-family: monospace;
 }
 @media screen and (max-width: 1025px) {
-  .main-pic, .description {
+  .main-pic,
+  .description {
     width: 100%;
   }
   .flex-item-right {
@@ -294,10 +300,10 @@ boxtext0 {
     width: 80%;
     margin-left: 10%;
   }
-
 }
 @media (max-width: 1023px) {
-  .main-pic, .description {
+  .main-pic,
+  .description {
     width: 48%;
   }
   .flex-container {
@@ -384,7 +390,8 @@ boxtext0 {
   }
 }
 @media screen and (max-width: 769px) and (min-width: 767px) {
-  .main-pic, .description {
+  .main-pic,
+  .description {
     width: 60%;
   }
 }
@@ -446,7 +453,8 @@ boxtext0 {
     margin-left: -5.5%;
     margin-top: -6%;
   }
-  .main-pic, .description {
+  .main-pic,
+  .description {
     width: 90%;
   }
   .flex-item-right {
@@ -464,10 +472,11 @@ boxtext0 {
     margin-left: -6.5%;
     margin-top: -6%;
   }
-  .main-pic, .description {
+  .main-pic,
+  .description {
     width: 90%;
   }
-    .flex-item-right {
+  .flex-item-right {
     width: 100%;
     margin-left: 0%;
   }
@@ -480,10 +489,11 @@ boxtext0 {
   .width {
     font-size: 27px;
   }
-  .main-pic, .description {
+  .main-pic,
+  .description {
     width: 90%;
   }
-    .flex-item-right {
+  .flex-item-right {
     width: 100%;
     margin-left: 0%;
   }
@@ -495,10 +505,11 @@ boxtext0 {
   .width {
     font-size: 27px;
   }
-  .main-pic, .description {
+  .main-pic,
+  .description {
     width: 90%;
   }
-    .flex-item-right {
+  .flex-item-right {
     width: 100%;
     margin-left: 0%;
   }
@@ -510,10 +521,11 @@ boxtext0 {
   .width {
     font-size: 23px;
   }
-  .main-pic, .description {
+  .main-pic,
+  .description {
     width: 90%;
   }
-    .flex-item-right {
+  .flex-item-right {
     width: 100%;
     margin-left: 0%;
   }

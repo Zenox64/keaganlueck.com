@@ -25,6 +25,11 @@ title = justDate
 print(title)
 takenOn = input("What was this photo taken on? : ")
 head, sep, tail = fileName.partition('.')
+
+allPhotos = open("all-photos.html", "a")
+allPhotos.write('<html>')
+allPhotos.close()
+
                          
 output = '<a href=''"' + head + '.html"''>'\
             '\n<figure class="gallery-frame">'\
@@ -33,6 +38,15 @@ output = '<a href=''"' + head + '.html"''>'\
             '\n</figure></a>'
 
 print(output)
+
+with open("all-photos.html", 'r+') as f: #r+ does the work of rw
+    lines = f.readlines()
+    for i, line in enumerate(lines):
+        if line.startswith('<!--Below here-->'):
+            lines[i] = lines[i].strip() + '\n' + output + '\n'
+    f.seek(0)
+    for line in lines:
+        f.write(line)
 
 newHyperFile = head + ".html"
 file = open(newHyperFile, 'x')
@@ -124,7 +138,7 @@ htmlTemplate = '<html>\
     \n<div class="flex-item-right">\
     \n<center style="background-color:#45a29e;"><boxtitle0><b style="background-color:#45a29e;"><u>info</u></b></boxtitle0></center>\
     \n<boxtext0>This photo was taken on <a href="" >' + justDate + '</a> with <a href="">' + takenOn + '</a></boxtext0>\
-    \n<a href="path_to_file" download="'+  fileName +'" class="downloadBtn">click to save image</a>\
+    \n<div class="button-parent"><a href="'+ fileName +'" download class="downloadBtn">click to save image</a></div> \
     \n</center>\
     \n</ul>\
     \n</div>\
