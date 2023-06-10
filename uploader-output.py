@@ -33,7 +33,7 @@ while 1==1:
                              
     output = '<a href=''"' + head + '.html"''>'\
                 '\n<figure class="gallery-frame">'\
-                '\n<img class="gallery-img" src="' + fileName + '" alt="symbol image" title="'+ title + '">'\
+                '\n<img class="gallery-img" src="' + fileName + '-cover" alt="symbol image" title="'+ title + '">'\
                 '\n<figcaption>' + caption +'</figcaption>'\
                 '\n</figure></a>'
 
