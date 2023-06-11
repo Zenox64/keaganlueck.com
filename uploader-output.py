@@ -9,31 +9,57 @@
 import os
 import datetime
 from datetime import date
+from PIL import Image
+from PIL.ExifTags import TAGS
+
 while 1==1:
     filePath = input("File name : ")
     fileName = os.path.basename(filePath)
-
+    
     fileDateCreate = os.path.getmtime(filePath)
     creationDate = datetime.datetime.fromtimestamp(fileDateCreate)
     justDate = creationDate.strftime('%Y-%m-%d') # trimmed down
     print(justDate)
 
+    head, sep, tail = fileName.partition('.')
+
+    image_file = Image.open(filePath)
+    image_file.save(head + '-cover.jpg', quality=10)
+    exifdata = image_file.getexif()
+#IN PROGRESS
+##    exif = {
+##    PIL.ExifTags.TAGS[k]: v
+##    for k, v in exifdata.items()
+##    if k in PIL.ExifTags.TAGS
+##    }
+##    print(exif)
+##    # print(image_file.size)
+##    print(exifdata.get(271))
+##    # looping through all the tags present in exifdata
+##    for tagid in exifdata:
+##        # getting the tag name instead of tag id
+##        tagname = TAGS.get(tagid, tagid)
+##        # passing the tagid to get its respective value
+##        value = exifdata.get(tagid)
+##        # printing the final result
+##        print(f"{tagname:25}: {value}")
+         
     print(fileName)
     caption = input("Caption : ")
     print(caption)
     title = justDate
     print(title)
     takenOn = "Sony RX-100M3" # input("What was this photo taken on? : ") 
-    head, sep, tail = fileName.partition('.')
+    
 
     allPhotos = open("all-photos.html", "a")
     allPhotos.write('<html>')
     allPhotos.close()
-
+  
                              
     output = '<a href=''"' + head + '.html"''>'\
                 '\n<figure class="gallery-frame">'\
-                '\n<img class="gallery-img" src="' + fileName + '-cover" alt="symbol image" title="'+ title + '">'\
+                '\n<img class="gallery-img" src="' + head + '-cover.jpg" alt="symbol image" title="'+ title + '">'\
                 '\n<figcaption>' + caption +'</figcaption>'\
                 '\n</figure></a>'
 
@@ -161,6 +187,8 @@ while 1==1:
 
     file.write(htmlTemplate)
     file.close()
+
+
 
 
 
