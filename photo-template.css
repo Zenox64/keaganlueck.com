@@ -191,7 +191,7 @@ p {
 }
 .main-pic {
   border-radius: 30px;
-  width: 70%;
+  width: 90%;
   box-shadow: 12px 12px 12px 12px #000;
   transition: transform 0.2s;
 }
