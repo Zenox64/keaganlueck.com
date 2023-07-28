@@ -255,29 +255,7 @@ function alertTest() {
   );
 }
 //alertTest();
-const present = new Date(); // Tue Mar 10 2021 13:29:58 GMT+0100 (Central European Standard Time)
-const birthday = new Date();
-birthday.setDate(15); // MAR 5
-birthday.setMonth(7); // JUN 5
-birthday.setYear(2005); // JUN 5 1999
 
-/* Depending on what you're looking for */
-const dHours = Math.abs(present - birthday) / 36e5; // 192.03
-const dDays = Math.abs(present - birthday) / 36e5 / 24; // 8.001472
-const age = Math.abs(present - birthday) / 36e5 / 24 / 365; // not taking the dilemma of feb29 in consideration here
-/* To Display Times where objects or other forms of data were created */
-class Person {
-  bornOn;
-  constructor() {
-    this.bornOn = new Date();
-    this.createdAt = Date.now(); // i wanna say this is the "industry standard" giving the naming convention and the timestamp form, even though it's not UNIX format.
-  }
-}
-var sneak = "sneak";
-const baby = new Person();
-console.log(baby.bornOn.toLocaleString());
-Math.floor(age); // 3/9/2021, 1:35:50 PM
-document.getElementById("age").textContent = Math.floor(age);
 
 /*$(document).ready(function() {
   $("body").hide().delay(500).fadeIn(3000)
