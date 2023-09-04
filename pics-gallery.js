@@ -1,3 +1,6 @@
+var photos = [
+  
+]
 //lazy loading images below
 const images = document.querySelectorAll("[data-src]")
 
