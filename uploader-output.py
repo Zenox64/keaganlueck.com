@@ -12,13 +12,13 @@ from datetime import date
 from PIL import Image
 from PIL.ExifTags import TAGS
 
-while 1==1:
+while 1 == 1:
     filePath = input("File name : ")
     fileName = os.path.basename(filePath)
-    
+
     fileDateCreate = os.path.getmtime(filePath)
     creationDate = datetime.datetime.fromtimestamp(fileDateCreate)
-    justDate = creationDate.strftime('%Y-%m-%d') # trimmed down
+    justDate = creationDate.strftime('%Y-%m-%d')  # trimmed down
     print(justDate)
 
     head, sep, tail = fileName.partition('.')
@@ -26,46 +26,57 @@ while 1==1:
     image_file = Image.open(filePath)
     image_file.save(head + '-cover.jpg', quality=10)
     exifdata = image_file.getexif()
-#IN PROGRESS
-##    exif = {
-##    PIL.ExifTags.TAGS[k]: v
-##    for k, v in exifdata.items()
-##    if k in PIL.ExifTags.TAGS
-##    }
-##    print(exif)
-##    # print(image_file.size)
-##    print(exifdata.get(271))
-##    # looping through all the tags present in exifdata
-##    for tagid in exifdata:
-##        # getting the tag name instead of tag id
-##        tagname = TAGS.get(tagid, tagid)
-##        # passing the tagid to get its respective value
-##        value = exifdata.get(tagid)
-##        # printing the final result
-##        print(f"{tagname:25}: {value}")
-         
+# IN PROGRESS
+# exif = {
+# PIL.ExifTags.TAGS[k]: v
+# for k, v in exifdata.items()
+# if k in PIL.ExifTags.TAGS
+# }
+# print(exif)
+# print(image_file.size)
+# print(exifdata.get(271))
+# looping through all the tags present in exifdata
+# for tagid in exifdata:
+# getting the tag name instead of tag id
+# tagname = TAGS.get(tagid, tagid)
+# passing the tagid to get its respective value
+# value = exifdata.get(tagid)
+# printing the final result
+# print(f"{tagname:25}: {value}")
+
     print(fileName)
     caption = input("Caption : ")
     print(caption)
     title = justDate
     print(title)
-    takenOn = "Sony RX-100M3" # input("What was this photo taken on? : ") 
-    
+    takenOn = "Sony RX-100M3"  # input("What was this photo taken on? : ")
 
     allPhotos = open("all-photos.html", "a")
     allPhotos.write('<html>')
     allPhotos.close()
-  
-                             
+
+    gallery = open("pics-gallery.html", "a")
+    gallery.write('<html>')
+    allPhotos.close()
+
     output = '<a href=''"' + head + '.html"''>'\
-                '\n<figure class="gallery-frame">'\
-                '\n<img class="gallery-img" src="' + head + '-cover.jpg" alt="symbol image" title="'+ title + '">'\
-                '\n<figcaption>' + caption +'</figcaption>'\
-                '\n</figure></a>'
+        '\n<figure class="gallery-frame">'\
+        '\n<img class="gallery-img" src="' + head + '-cover.jpg" alt="symbol image" title="' + title + '">'\
+        '\n<figcaption>' + caption + '</figcaption>'\
+        '\n</figure></a>'
 
-    print(output)
+    # print(output)
 
-    with open("all-photos.html", 'r+') as f: #r+ does the work of rw
+    with open("all-photos.html", 'r+') as f:  # r+ does the work of rw
+        lines = f.readlines()
+        for i, line in enumerate(lines):
+            if line.startswith('<!--Below here-->'):
+                lines[i] = lines[i].strip() + '\n' + output + '\n'
+        f.seek(0)
+        for line in lines:
+            f.write(line)
+
+    with open("pics-gallery.html", 'r+') as f:  # r+ does the work of rw
         lines = f.readlines()
         for i, line in enumerate(lines):
             if line.startswith('<!--Below here-->'):
@@ -156,15 +167,15 @@ while 1==1:
         \n<center>\
         \n<div class="flex-container">\
         \n<div class="flex-item-left">\
-        \n<img src="'+ fileName +'" class="main-pic" id="imgName" title="hover to zoom">\
+        \n<img src="' + fileName + '" class="main-pic" id="imgName" title="hover to zoom">\
         \n<div class="description">\
-        \n<p class="des-text">' + caption +'</p>\
+        \n<p class="des-text">' + caption + '</p>\
         \n</div>\
         \n</div>\
         \n<div class="flex-item-right">\
         \n<center style="background-color:#45a29e;"><boxtitle0><b style="background-color:#45a29e;"><u>info</u></b></boxtitle0></center>\
-        \n<boxtext0>This photo was taken on <a href="'+ justDate + '.html" >' + justDate + '</a> with <a href="' + takenOn +'.html">' + takenOn + '</a></boxtext0>\
-        \n<div class="button-parent"><a href="'+ fileName +'" download class="downloadBtn">click to save image</a></div> \
+        \n<boxtext0>This photo was taken on <a href="' + justDate + '.html" >' + justDate + '</a> with <a href="' + takenOn + '.html">' + takenOn + '</a></boxtext0>\
+        \n<div class="button-parent"><a href="' + fileName + '" download class="downloadBtn">click to save image</a></div> \
         \n</center>\
         \n</ul>\
         \n</div>\
@@ -187,8 +198,3 @@ while 1==1:
 
     file.write(htmlTemplate)
     file.close()
-
-
-
-
-
