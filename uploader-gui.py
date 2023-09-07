@@ -11,28 +11,38 @@ from tkinter import PhotoImage
 
 
 
+
 root = tkinter.Tk()
 print('Upload photos via GUI')
 root.title('Picture Uploader')
-root.geometry('250x250')
+root.geometry('285x200')
 
-# appImg = PhotoImage(file='keaganlueck.com/keaganlueck.com(streampi).png')
-# root.iconphoto(False, appImg)
+root.configure(bg="#0b0c10")
 
-lbl = tkinter.Label(root, text="Enter image path:", fg="#999")
-txtInp = tkinter.Entry(root, fg="#AA0")
-lbl1 = tkinter.Label(root, text="Caption", fg="#999")
-txtInp1 = tkinter.Entry(root, fg="#AA0")
+appImg = PhotoImage(file='keaganlueck.com(streampi).png')
+root.iconphoto(False, appImg)
 
+def tempTxt(e):
+   txtInp.delete(0,"end")
+def tempTxt1(e):
+   txtInp1.delete(0,"end")
+   
+#lbl = tkinter.Label(root, text="Enter image path:", fg="#999")
+txtInp = tkinter.Entry(root, fg="#45a29e", width=45)
+txtInp.insert(0, "Image path:")
+txtInp.bind("<FocusIn>", tempTxt)
+#lbl1 = tkinter.Label(root, text="Caption:", fg="#999")
+txtInp1 = tkinter.Entry(root, fg="#45a29e", width=45)
+txtInp1.insert(0, "Caption:")
+txtInp1.bind("<FocusIn>", tempTxt1)
 
-lbl.grid(padx=5, pady=5)
-lbl1.grid(padx=5, pady=5)
+#lbl.grid(padx=5, pady=5)
+#lbl1.grid(padx=5, pady=5)
 txtInp.grid(padx=5, pady=5)
 txtInp1.grid(padx=5, pady=5)
 
 
 def post():
-    while 1 == 1:
         filePath = txtInp.get()
         fileName = os.path.basename(filePath)
 
@@ -218,10 +228,15 @@ def post():
 
         file.write(htmlTemplate)
         file.close()
+        txtInp.delete(0,"end")
+        txtInp1.delete(0,"end")
+        txtInp.insert(0, "Success!")
+        txtInp1.insert(0, "Success!")
+
 
 
 btnPost = tkinter.Button(root, text="POST!",
-                         fg="#fff", bg="#000", command=post)
+                         fg="#fff", bg="#45a29e", width=25, height=3, command=post)
 btnPost.grid(padx=5, pady=5)
 
 root.mainloop()
