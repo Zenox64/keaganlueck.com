@@ -89,13 +89,19 @@ def post():
         gallery.write('<html>')
         allPhotos.close()
 
+        library = open("photo-library.html", "a")
+        library.write('<html>')
+        library.close()
+
         output = '<a href=''"' + head + '.html"''>'\
             '\n<figure class="gallery-frame">'\
             '\n<img class="gallery-img" src="' + head + '-cover.jpg" alt="symbol image" title="' + title + '">'\
             '\n<figcaption>' + caption + '</figcaption>'\
             '\n</figure></a>'
+        libraryOutput = '{imgSrc:' + "'" + fileName + "'" + ','\
+                          'caption:' + "'" + caption + "'},"
 
-        # print(output)
+        #print(libraryOutput)
 
         with open("all-photos.html", 'r+') as f:  # r+ does the work of rw
             lines = f.readlines()
@@ -111,6 +117,14 @@ def post():
             for i, line in enumerate(lines):
                 if line.startswith('<!--Below here-->'):
                     lines[i] = lines[i].strip() + '\n' + output + '\n'
+            f.seek(0)
+            for line in lines:
+                f.write(line)
+        with open("photo-library.html", 'r+') as f:  # r+ does the work of rw
+            lines = f.readlines()
+            for i, line in enumerate(lines):
+                if line.startswith('//below'):
+                    lines[i] = lines[i].strip() + '\n' + libraryOutput + '\n'
             f.seek(0)
             for line in lines:
                 f.write(line)

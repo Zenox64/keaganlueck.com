@@ -1,3 +1,32 @@
+/* photo library*/
+.gallery-container {
+  display: flex;
+}
+
+.gallery-img {
+  width: 70%;
+  max-height: 80%;
+}
+
+.photo-caption {
+  text-align: center;
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.navigation button {
+  margin: 0 10px;
+  border-radius: 20px;
+  color: green;
+  background-color: white;
+}
+
+
 #current {
   background-color: #fff;
   color: black;
@@ -103,7 +132,7 @@ h1:visited {
   color: white;
 }
 body {
-  background-color: black;
+  background-color: #0b0c10;
 }
 #myPicture {
   /*margin-top: 10px;*/
@@ -185,9 +214,6 @@ input {
   .navbar-toggle {
     position: absolute;
     top: 50rem;
-  }
-  body {
-    background: green;
   }
 }
 @media screen and (min-width: 800px) {

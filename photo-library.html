@@ -1,0 +1,146 @@
+<html>
+  <head>
+    <title>Photo Library</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/aa9d3f27c6.js" crossorigin="anonymous"></script>    
+<link rel="shortcut icon" href="title icon transparent backgroud.png" />
+    <link rel="stylesheet" href="pics.css" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0TPJ01CVND"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0TPJ01CVND');
+</script>
+  </head>
+  <body>
+     <div id="page-container">
+      <div id="content-wrap">
+    <div class="gradient">
+      <nav class="navbar" id="navbar">
+ <span class="navbar-toggle" id="js-navbar-toggle" onclick="openNav()" style="position: absolute; top: 5%;">
+            <i class="fas fa-bars fa-3x" data-fa-transform="shrink-8 left-8" style="color: white;"></i>
+          </span>
+          <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">home</a>
+            <a href="#5074300823" style="color: #fff;"><u>photos:</u></a>
+            <a href="pics.html" style="text-indent: 4%;" id="current">slideshow</a>
+            <a href="pics-gallery.html"  style="text-indent: 4%;"">gallery</a>
+            <a href="changelog.html">changelog</a>
+            <a href="directory.html">directory</a>
+</div>
+        <a href="index.html" class="logo" id="logo"
+          ><img src="keaganlueck.com(streampi).png" width="55px" height="55px"
+        /></a>
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="index.html" class="nav-links">home</a>
+          </li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn" id="current">pics</button>
+                    <div class="dropdown-content">
+                    <a href="pics-gallery.html">Gallery</a>
+                    <a href="pics.html">Slideshow</a>
+                </div>
+            </div>
+          </li>
+          <li>
+            <a href="changelog.html" class="nav-links">changelog</a>
+          </li>
+           <li>
+              <a href="directory.html" class="nav-links">directory</a>
+          </li>
+
+        </ul>
+
+            <form onsubmit="pressed(event)" id="form">
+      <div class="floating-label-input">
+        <input type="text" id="jr" autocapitalize="off" placeholder="Search..."/>
+        <label id="button" for="jr"></label>
+        <!-- Label MUST be after input! -->
+      </form>
+      </div>
+      </nav>
+      <div class="numberOfPics">
+        <center><p id="counter"></p></center>
+      </div>
+    <div class="gallery-container">
+      <div class="navigation">
+        <button onclick="prevPhoto()">&lt; Prev</button>
+      </div>
+            <figure class="gallery-frame">
+                <center><img class="gallery-img" src="DSC01863-cover.jpg" alt="symbol image" title="2023-07-04"></center>
+                <figcaption class="photo-caption">Gunflint Merc ties</figcaption>
+            </figure>
+        <div class="navigation">
+            <button onclick="nextPhoto()">Next &gt;</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle photo navigation
+
+        var photoIndex = 0;
+        var photos = [
+//below
+            {
+                imgSrc: 'DSC01863-cover.jpg',
+                caption: 'Gunflint Merc ties'
+            },
+            {
+                imgSrc: 'DSC01858-cover.jpg',
+                caption: 'Freedom day'
+            },
+            // Add more photo objects as needed
+        ];
+
+        function showPhoto(index) {
+            var photo = photos[index];
+            var photoGallery = document.getElementById('photoGallery');
+            photoGallery.innerHTML = `
+                <figure class="gallery-frame">
+                    <img class="gallery-img" src="${photo.imgSrc}" alt="symbol image" title="2023-07-04">
+                    <figcaption class="photo-caption">${photo.caption}</figcaption>
+                </figure>
+            `;
+        }
+
+        function nextPhoto() {
+            photoIndex = (photoIndex + 1) % photos.length;
+            showPhoto(photoIndex);
+        }
+
+        function prevPhoto() {
+            photoIndex = (photoIndex - 1 + photos.length) % photos.length;
+            showPhoto(photoIndex);
+        }
+
+        // Show the initial photo
+        showPhoto(photoIndex);
+    </script>
+ 
+
+
+        <div class="footer" id="footer">
+      <center>
+        <footer>
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Keagan Lueck<br /> 
+          User Interface - v2 Early Release
+        </footer>
+      </center>
+    </div>
+    <script src="pics.js"></script>
+    <!--<button onsubmit="changePictures()">submit</button>-->
+  </body>
+</html>
+<html><html><html>
