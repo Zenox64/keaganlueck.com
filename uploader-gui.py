@@ -81,6 +81,10 @@ def post():
         print(title)
         takenOn = "Sony RX-100M3"  # input("What was this photo taken on? : ")
 
+        image = Image.open(fileName)
+        print(image.model)
+
+         
         allPhotos = open("all-photos.html", "a")
         allPhotos.write('<html>')
         allPhotos.close()
@@ -99,7 +103,10 @@ def post():
             '\n<figcaption>' + caption + '</figcaption>'\
             '\n</figure></a>'
         libraryOutput = '{imgSrc:' + "'" + fileName + "'" + ','\
-                          'caption:' + "'" + caption + "'},"
+                          'caption:' + "'" + caption + "',"\
+                          'date:' + "'" + title + "',"\
+                          'camera:' + "'" + takenOn + "'},"
+                          
 
         #print(libraryOutput)
 

@@ -70,24 +70,36 @@
       <div class="numberOfPics">
         <center><p id="counter"></p></center>
       </div>
-    <div class="gallery-container">
-      <div class="navigation">
-        <button onclick="prevPhoto()">&lt; Prev</button>
-      </div>
-            <figure class="gallery-frame">
-                <center><img class="gallery-img" src="DSC01863-cover.jpg" alt="symbol image" title="2023-07-04"></center>
-                <figcaption class="photo-caption">Gunflint Merc ties</figcaption>
-            </figure>
+       <div class="gallery-container">
         <div class="navigation">
-            <button onclick="nextPhoto()">Next &gt;</button>
-        </div>
+          <button onclick="prevPhoto()">&lt; Prev</button>
+      </div>
+      <div id="photoGallery">
+        <figure class="gallery-frame">
+          <img
+            class="gallery-img"
+            src="DSC01863-cover.jpg"
+            alt="symbol image"
+            title="2023-07-04"
+          />
+          <div class="description">
+            <figcaption class="photo-caption">Gunflint Merc ties</figcaption>
+          </div>
+          <div class="description">
+            <figcaption class="photo-caption">Gunflint Merc ties</figcaption>
+          </div>
+        </figure>
+      </div>
+      <div class="navigation">
+        <button onclick="nextPhoto()">Next &gt;</button>
+      </div>
     </div>
 
-    <script>
+<script>
         // JavaScript to handle photo navigation
 
-        var photoIndex = 0;
-        var photos = [
+var photoIndex = 0;
+var photos = [
 //below
 {imgSrc:'DSC03356.JPG',caption:'Foggy morning'},
 {imgSrc:'DSC03355.JPG',caption:'Got him right'},
@@ -102,7 +114,7 @@
 {imgSrc:'DSC03319.JPG',caption:''},
 {imgSrc:'DSC03316.JPG',caption:'Around'},
 {imgSrc:'DSC03293.JPG',caption:''},
-{imgSrc:'DSC03282.JPG',caption:'He's good'},
+{imgSrc:'DSC03282.JPG',caption:'He is good'},
 {imgSrc:'DSC03273.JPG',caption:'Same thing different day'},
 {imgSrc:'DSC03272.JPG',caption:'Lil Woods'},
 {imgSrc:'DSC03269.JPG',caption:'Our camp'},
@@ -113,58 +125,42 @@
 {imgSrc:'DSC03245.JPG',caption:'Canosia WMA'},
 {imgSrc:'DSC03238.JPG',caption:'Uncut Gems'},
 {imgSrc:'DSC03235.JPG',caption:'Good morning '},
-            {
-                imgSrc: 'DSC01863-cover.jpg',
-                caption: 'Gunflint Merc ties'
-            },
-            {
-                imgSrc: 'DSC01858-cover.jpg',
-                caption: 'Freedom day'
-            },
             // Add more photo objects as needed
-        ];
+];
 
-        function showPhoto(index) {
-            var photo = photos[index];
-            var photoGallery = document.getElementById('photoGallery');
-            photoGallery.innerHTML = `
-                <figure class="gallery-frame">
-                    <img class="gallery-img" src="${photo.imgSrc}" alt="symbol image" title="2023-07-04">
-                    <figcaption class="photo-caption">${photo.caption}</figcaption>
-                </figure>
-            `;
-        }
+function showPhoto(index) {
+  var photo = photos[index];
+  var photoGallery = document.getElementById('photoGallery');
+  photoGallery.innerHTML = `
+  <center>
+      <figure class="gallery-frame">
+          <img class="gallery-img" src="${photo.imgSrc}" alt="symbol image">
+          <figcaption class="photo-caption">${photo.caption}</figcaption>
+          <figcaption class="photo-caption">
+            This photo was taken on ${photo.date} with ${photo.camera}</figcaption>
+      </figure>
+    </center>
+  `;
+}
 
-        function nextPhoto() {
-            photoIndex = (photoIndex + 1) % photos.length;
-            showPhoto(photoIndex);
-        }
+function nextPhoto() {
+  photoIndex = (photoIndex + 1) % photos.length;
+  showPhoto(photoIndex);
+}
 
-        function prevPhoto() {
-            photoIndex = (photoIndex - 1 + photos.length) % photos.length;
-            showPhoto(photoIndex);
-        }
+function prevPhoto() {
+  photoIndex = (photoIndex - 1 + photos.length) % photos.length;
+  showPhoto(photoIndex);
+}
 
-        // Show the initial photo
-        showPhoto(photoIndex);
-    </script>
+// Show the initial photo
+showPhoto(photoIndex);
+</script>
  
 
 
-        <div class="footer" id="footer">
-      <center>
-        <footer>
-          &copy;
-          <script>
-            document.write(new Date().getFullYear());
-          </script>
-          Keagan Lueck<br /> 
-          User Interface - v2 Early Release
-        </footer>
-      </center>
-    </div>
-    <script src="pics.js"></script>
+    <!--<script src="pics.js"></script>-->
     <!--<button onsubmit="changePictures()">submit</button>-->
   </body>
 </html>
-<html><html><html><html><html><html><html><html><html><html><html><html><html><html><html><html><html><html><html><html><html><html><html><html><html><html><html>
+<html><html>
