@@ -82,7 +82,7 @@ def post():
         takenOn = "Sony RX-100M3"  # input("What was this photo taken on? : ")
 
         image = Image.open(fileName)
-        print(image.model)
+        #print(image.model)
 
          
         allPhotos = open("all-photos.html", "a")
