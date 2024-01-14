@@ -68,10 +68,7 @@ input:focus {
   list-style-type: none;
   display: none;
 }
-.nav-links {
-  position: relative;
-  top: 1.3rem;
-}
+
 .nav-links,
 .logo {
   text-decoration: none;

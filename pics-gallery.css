@@ -70,10 +70,7 @@ recents {
   list-style-type: none;
   display: none;
 }
-.nav-links {
-  position: relative;
-  top: 1.2rem;
-}
+
 .nav-links,
 .logo {
   text-decoration: none;
