@@ -1,13 +1,7 @@
 var popup1 = document.getElementById("popup1");
 var triangle1 = document.getElementById("triangle1");
 function copy1() {
-  popup1.classList.toggle("show");
-  triangle1.classList.toggle("show");
-  navigator.clipboard.writeText("keaganlueck@gmail.com");
-  setTimeout(() => {
-    popup1.classList.remove("show");
-    triangle1.classList.remove("show");
-  }, 3500);
+window.open("https://www.luecktree.com/");
 }
 function showImg() {
   document.getElementById("hiddenImg").style.display = "inline-block";
