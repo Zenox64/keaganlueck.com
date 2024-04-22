@@ -1,0 +1,96 @@
+html {
+  background: url("mona-phona.jpg") no-repeat center center fixed;
+  font-family: monospace;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.fix-nav {
+  overflow: hidden;
+  opacity: 0.5;
+  background-color: red;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  left: 1;
+  width: 100%; /* Full width */
+  height: 6%;
+}
+
+/* Links inside the navbar */
+.fix-nav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: large;
+}
+
+/* Change background on mouse-over */
+.fix-nav a:hover {
+  background: #ddd;
+  color: black;
+}
+.current { 
+  background: #ddd;
+  color: black;
+}
+#current {
+  background-color: #fff;
+  color: black;
+}
+button::hover {
+  cursor: pointer;
+}
+u {
+  background: transparent;
+}
+.title {
+  margin-top: 20%;
+  font-weight: 900;
+  font-size: 30pt;
+  color: black;
+  background-color: white;
+}
+.problem {
+  margin-top: 60%;
+  width: 98%;
+  height: 50%;
+  border: 5px solid white;
+  background-color: #c9824c;
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+.argument {
+  width: 98%;
+  height: 50%;
+  border: 5px solid white;
+  background-color: #436061;
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+.box-head {
+  letter-spacing: 1cm;
+  color: white;
+}
+.images {
+  display: block;
+}
+.img {
+  width:48%;
+  padding: 5px;
+}
+.box-text {
+  font-size: 25px;
+  color: white;
+}
+.footer {
+  color: white;
+  display: inline-block;
+  position: relative;
+  bottom: -5rem;
+  width: 99%;
+  height: 3.5rem;
+}
