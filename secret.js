@@ -1,7 +1,7 @@
 var popup1 = document.getElementById("popup1");
 var triangle1 = document.getElementById("triangle1");
 function copy1() {
-window.open("https://www.luecktree.com/");
+  window.open("https://www.luecktree.com/");
 }
 function showImg() {
   document.getElementById("hiddenImg").style.display = "inline-block";
@@ -171,6 +171,11 @@ function pressed(e) {
     case "college art":
       window.location.replace((url = "college-art.html"));
       break;
+    case "yeezy":
+      window.location.replace((url = "yeezy.html"));
+      break;
+    case "college writing":
+      window.location.replace((url = "/college-writing/project4b.html"));
     default:
       tesla.innerHTML = "";
       header.innerHTML = greeting;
