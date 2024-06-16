@@ -79,7 +79,7 @@ def post():
         print(caption)
         title = justDate
         print(title)
-        takenOn = "Coolpix S8000"  # input("What was this photo taken on? : ")
+        takenOn = "Nikon Z50"  # input("What was this photo taken on? : ")
 
         image = Image.open(fileName)
         #print(image.model)
