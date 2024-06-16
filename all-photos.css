@@ -130,6 +130,12 @@ label {
   color: #66fcf1;
   font-family: monospace;
 }
+.infotext {
+  display: inline;
+}
+.more {
+  display: block;
+}
 .numberOfPics {
   color: #66fcf1;
   font-family: monospace, sans-serif;
