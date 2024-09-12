@@ -10,6 +10,11 @@ body {
   border-style: solid;
   border-width: 1vw;
   border-color: black;
+  h1,
+  a,
+  h3 {
+    color: white;
+  }
 }
 .flexbox0 {
   display: flex;
@@ -59,6 +64,11 @@ a {
 }
 .textbox {
   width: 33vw;
+  background-color: red;
+  margin: 0;
+}
+.textbox0 {
+  width: 35.5vw;
   background-color: red;
   margin: 0;
 }
@@ -115,6 +125,11 @@ a {
 figcaption {
   background: #404c5a;
   color: red;
+}
+@media only screen and (max-width: 950px) {
+  .textbox0 {
+    width: 85vw;
+  }
 }
 
 @media only screen and (max-width: 700px) {
