@@ -1,0 +1,112 @@
+html {
+  border-style: solid;
+  border-width: 2ch;
+  border-color: red;
+  font-size: 100%;
+  font-family: "Brush Script MT", cursive;
+  background-color: #c3996b;
+}
+.flexbox0 {
+  display: flex;
+}
+.nav {
+  background-color: blue;
+  width: 25vw;
+}
+.home {
+  font-size: 2vw;
+  border: 15px solid lightblue;
+  letter-spacing: 0.5vw;
+  margin: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.left,
+.right {
+  flex: 1;
+}
+.flexbox1 {
+  margin-bottom: 20%;
+  letter-spacing: 0.5vw;
+  font-size: 2vw;
+}
+.left {
+  text-align: left;
+  float: left;
+  clear: none;
+  width: 50%;
+}
+.right {
+  text-align: right;
+  float: right;
+  clear: none;
+  width: 50%;
+}
+#home {
+  width: 25vw;
+}
+.flexbox2,
+a {
+  color: #0054a5;
+}
+.flexbox3 {
+  margin-top: 25%;
+}
+.textbox {
+  width: 27vw;
+  background-color: red;
+  margin: 0;
+}
+.title {
+  font-size: 4vw;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.highlight {
+  width: 30vw;
+  height: 7vw;
+  background-color: red;
+  border-radius: 30px;
+  color: white;
+  -webkit-text-stroke-width: 0.25vw;
+  -webkit-text-stroke-color: black;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* First the Grid */
+.gallery-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1.5rem;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* The Picture Frame */
+.gallery-frame {
+  padding: 0.3rem;
+  font-size: 1rem;
+  text-align: center;
+  background-color: #1f2833;
+  color: #d9d9d9;
+}
+
+/* The Images */
+.gallery-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.gallery-img:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+figcaption {
+  background: #404c5a;
+  color: red;
+}
