@@ -172,9 +172,7 @@ def post():
             \n<a href="#5074300823" style="color: #fff;"><u>photos:</u></a>\
             \n<a href="pics.html" style="text-indent: 4%;">slideshow</a>\
             \n<a href="pics-gallery.html"  style="text-indent: 4%;" id="current">gallery</a>\
-            \n<a href="blog.html">blog</a>\
             \n<a href="changelog.html">changelog</a>\
-            \n<a href="contact.html">contact</a>\
             \n</div>\
             \n<a href="index.html" class="logo" id="logo"\
                 ><img src="keaganlueck.com(streampi).png" width="55px" height="55px"\
@@ -193,13 +191,7 @@ def post():
             \n</div>\
             \n</li>\
             \n<li>\
-            \n<a href="blog.html" class="nav-links">blog</a>\
-            \n</li>\
-            \n<li>\
             \n<a href="changelog.html" class="nav-links">changelog</a>\
-            \n</li>\
-            \n<li>\
-            \n<a href="blog.html" class="nav-links">contact</a>\
             \n</li>\
             \n</ul>\
             \n<form onsubmit="pressed(event)" id="form">\
