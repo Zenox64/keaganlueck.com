@@ -156,12 +156,6 @@ function pressed(e) {
     case "photo gallery":
       window.location.replace((url = "pics-gallery.html"));
       break;
-    case "contact":
-      window.location.replace((url = "contact.html"));
-      break;
-    case "contact":
-      window.location.replace((url = "phone.html"));
-      break;
     case "photography":
       window.location.replace((url = "photography-class.html"));
       break;
@@ -176,6 +170,12 @@ function pressed(e) {
       break;
     case "college writing":
       window.location.replace((url = "/college-writing/project4b.html"));
+    case "blog":
+      window.location.replace((url = "/blog-kl.html"));
+    case "contact":
+      window.location.replace((url = "/contact-kl.html"));
+    case "videos":
+      window.location.replace((url = "/videos.html"));
     default:
       tesla.innerHTML = "";
       header.innerHTML = greeting;
