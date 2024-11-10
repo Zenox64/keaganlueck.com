@@ -132,9 +132,6 @@ function pressed(e) {
     case "groovebook":
       window.location.replace((url = "groovebook.html"));
       break;
-    case "blog":
-      window.location.replace((url = "blog.html"));
-      break;
     case "tesla counter":
       window.location.replace((url = "tesla-counter.html"));
       break;
@@ -171,11 +168,11 @@ function pressed(e) {
     case "college writing":
       window.location.replace((url = "/college-writing/project4b.html"));
     case "blog":
-      window.location.replace((url = "/blog-kl.html"));
+      window.location.replace((url = "blog-kl.html"));
     case "contact":
-      window.location.replace((url = "/contact-kl.html"));
+      window.location.replace((url = "contact-kl.html"));
     case "videos":
-      window.location.replace((url = "/videos.html"));
+      window.location.replace((url = "videos.html"));
     default:
       tesla.innerHTML = "";
       header.innerHTML = greeting;
