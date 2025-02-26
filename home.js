@@ -46,4 +46,4 @@ function cycleArray() {
     count = (count + 1) % recentPix.length;
 }
 
-setInterval(cycleArray, 3000);
+setInterval(cycleArray, 2000);

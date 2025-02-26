@@ -178,3 +178,216 @@ button::hover {
   display: flex;
   flex-direction: column;
 }
+#flex-item {
+  flex-direction: column;
+}
+.header {
+  color: #45a29a;
+}
+::selection {
+  background-color: #fff;
+  color: blue;
+}
+.recent {
+  list-style-position: inside;
+  margin: 15px auto;
+}
+#header {
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 105px;
+  line-height: 1.5;
+}
+
+/* flexbox */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  width: 100%;
+}
+
+.flex-item-left {
+  background-color: #45a29e;
+  padding: 10px;
+  flex: 50%;
+  box-shadow: 12px 12px 12px 12px #000;
+  border-radius: 30px;
+  height: 40rem;
+  margin: 1%;
+  height: 50rem;
+  margin-top: -14%;
+  max-height: 50rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.flex-item-left::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+.flex-item-left::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+}
+
+.flex-item-left::-webkit-scrollbar-thumb {
+  background-color: #1f2833;
+  outline: 0px solid #1f2833;
+  border-radius: 10px;
+}
+.flex-item-left::-webkit-scrollbar-track {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.flex-item-center {
+  background-color: #1f2833;
+  padding: 10px;
+  flex: 50%;
+  box-shadow: 12px 12px 12px 12px #000;
+  border-radius: 30px;
+  margin: 1%;
+  height: 37rem;
+  margin-top: -3%;
+  max-height: 37rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.flex-item-center::-webkit-scrollbar-track {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.flex-item-center::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+.flex-item-center::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+}
+
+.flex-item-center::-webkit-scrollbar-thumb {
+  background-color: #45a29e;
+  outline: 0px solid #1f2833;
+  border-radius: 10px;
+}
+.flex-item-right {
+  background-color: #45a29e;
+  padding: 10px;
+  flex: 50%;
+  box-shadow: 12px 12px 12px 12px #000;
+  border-radius: 30px;
+  margin: 1%;
+  height: 50rem;
+  margin-top: -14%;
+  max-height: 80rem;
+}
+.flex-item-right::-webkit-scrollbar-track {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.flex-item-right::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+.flex-item-right::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+}
+
+.flex-item-right::-webkit-scrollbar-thumb {
+  background-color: #1f2833;
+  outline: 0px solid #1f2833;
+  border-radius: 10px;
+}
+
+/* text styling */
+boxtitle0 {
+  font-size: 32pt;
+  font-family: monospace;
+  color: #1f2833;
+}
+.click-rec,
+boxtext0 {
+  font-family: monospace;
+  color: #1f2833;
+}
+boxtitle1 {
+  font-size: 32pt;
+  font-family: monospace;
+  color: #45a29e;
+}
+boxtext1 {
+  font-family: monospace;
+  color: #45a29e;
+}
+/* responsive flexbox */
+@media screen and (max-width: 1430px) {
+  #header {
+    font-size: 55pt;
+  }
+}
+@media (max-width: 1060px) {
+  .flex-container {
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .flex-item-left {
+    background-color: #45a29e;
+    padding: 2%;
+    flex: 50%;
+    box-shadow: 12px 12px 12px 12px #000;
+    border-radius: 30px;
+    margin: 1%;
+    height: 50px;
+    margin-bottom: 5%;
+  }
+  .flex-item-center {
+    background-color: #1f2833;
+    padding: 2%;
+    flex: 50%;
+    box-shadow: 12px 12px 12px 12px #000;
+    border-radius: 30px;
+    margin: 1%;
+    margin-top: 0%;
+    margin-bottom: 55%;
+  }
+  .flex-item-right {
+    background-color: #45a29e;
+    padding: 2%;
+    flex: 50%;
+    box-shadow: 12px 12px 12px 12px #000;
+    border-radius: 30px;
+    margin: 1%;
+    height: 50rem;
+    margin-top: -50%;
+    margin-bottom: 5%;
+  }
+}
+/* fancy scrollbar, footer and clicked link styling */
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #45a29e;
+  outline: 0px solid slategrey;
+  border-radius: 30px;
+}
+
+.footer {
+  color: white;
+  display: inline-block;
+  position: relative;
+  bottom: -5rem;
+  width: 99%;
+  height: 3.5rem;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: white;
+  font-family: monospace;
+}
