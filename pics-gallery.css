@@ -18,20 +18,6 @@ body {
 .album-text {
   margin-top: 2%;
 }
-.ext {
-  display: none;
-  color: #0b0c10;
-  text-decoration: none;
-  border: none;
-}
-::selection {
-  background-color: #fff;
-  color: blue;
-}
-option,
-select {
-  color: white;
-}
 recents {
   font-size: 32pt;
   color: #66fcf1;
@@ -79,11 +65,6 @@ a {
 }
 h1:visited {
   color: white;
-}
-
-label {
-  color: #66fcf1;
-  font-family: monospace;
 }
 .numberOfPics {
   color: #66fcf1;

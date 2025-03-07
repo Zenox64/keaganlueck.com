@@ -57,7 +57,7 @@
   font-family: monospace;
   font-size: 25px;
 }
-* {
+body {
   background-color: #0b0c10;
   box-sizing: border-box;
 }
@@ -120,50 +120,35 @@ recents {
     font-size: 15pt;
   }
 }
+/* main nav */
 .navbar {
   font-size: 18px;
   border: 1px solid #66fcf1;
   padding-bottom: 10px;
-  margin-top: -15px;
-  margin-left: -1%;
-  width: 102%;
+  width: 105%;
+  margin-left: -2.5%;
+  margin-top: -3%;
 }
-
 .main-nav {
   list-style-type: none;
   display: none;
 }
-.nav-links {
-  position: relative;
-  top: 1rem;
-}
+
 .nav-links,
 .logo {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
   font-family: monospace, "Lato", sans-serif;
 }
-
-.main-nav li {
-  text-align: center;
-  margin: 15px auto;
-}
-
-.logo {
-  display: inline-block;
-  font-size: 22px;
-  margin-top: 10px;
-  margin-left: 10px;
-}
-
 .navbar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
+  float: right;
+  padding: 10px;
+  padding-top: 0px;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 24px;
+  font-size: 22px;
 }
+
 
 @media screen and (min-width: 1030px) {
   #myPicture {
@@ -269,18 +254,6 @@ p {
   border-radius: 10px;
   position: relative;
 }
-.fa-download {
-  position: absolute;
-  right: 0;
-  left: 10;
-  bottom: 10%;
-  font-size: 40pt;
-  color: #fff;
-  background-color: transparent;
-}
-.fa-download:hover {
-  cursor: pointer;
-}
 .flex-item-right::-webkit-scrollbar-track {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -371,74 +344,8 @@ boxtext0 {
     bottom: 0;
   }
 }
-.dropbtn {
-  background-color: none;
-  color: #ffffffb3;
-  padding: 16px;
-  font-size: 18px;
-  border: none;
-  margin-left: 25%;
-  margin-top: 0.2rem;
-  font-family: monospace;
-}
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 10px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: #ffffffb3;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #fff;
-  cursor: pointer;
-  color: black;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-  cursor: pointer;
-  color: black;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: white;
-  color: black;
-  cursor: pointer;
-}
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-@media screen and (max-width: 769px) and (min-width: 767px) {
-  .main-pic,
-  .description {
-    width: 60%;
-  }
-}
+/* reactive nav */
 @media screen and (min-width: 800px) {
   .navbar {
     display: flex;
@@ -480,182 +387,36 @@ boxtext0 {
     background-color: #fff;
   }
 }
-@media screen and (max-width: 770px) and (min-width: 700px) {
-  .navbar {
-    width: 104%;
-    margin-left: -2%;
-  }
-}
-@media screen and (max-width: 440px) and (min-width: 401px) {
-  i {
-    position: relative;
-    top: -0.4rem;
-    left: 0.5rem;
-  }
-  .navbar {
-    width: 111%;
-    margin-left: -5.5%;
-    margin-top: -6%;
-  }
-  .main-pic {
-    width: 100%;
-  }
-  .description {
-    width: 90%;
-  }
-  .flex-item-right {
-    width: 80%;
-    margin-left: 0%;
-  }
-  u {
-    font-size: 80%
-  }
-  .des-text {
-    font-size: 50%
-  }
-  .downloadBtn, boxtext0, {
-    font-size: 60%;
-  }
-  .button-parent {
-    height: 10%
-  }
-}
-@media screen and (max-width: 400px) {
-  i {
-    top: -0.1rem;
-    left: 0.2rem;
-  }
+@media screen and (max-width: 420px) and (min-width: 401px) {
   .navbar {
     width: 112%;
     margin-left: -6.5%;
     margin-top: -6%;
   }
-  .main-pic {
-    width: 100%;
-  }
-  .description {
-    width: 90%;
-  }
-  .flex-item-right {
-    width: 80%;
-    margin-left: 0%;
-  }
-  u {
-    font-size: 80%
-  }
-  .des-text {
-    font-size: 50%
-  }
-  .downloadBtn, boxtext0, {
-    font-size: 60%;
-  }
-  .button-parent {
-    height: 10%
+}
+@media screen and (max-width: 400px) {
+  .navbar {
+    width: 112%;
+    margin-left: -6.5%;
+    margin-top: -6%;
   }
 }
 @media screen and (max-width: 376px) {
-  i {
-    top: -0.5rem;
-    left: 0.2rem;
-  }
   .width {
     font-size: 27px;
-  }
-  .main-pic {
-    width: 100%;
-  }
-  .description {
-    width: 90%;
-  }
-  .flex-item-right {
-    width: 80%;
-    margin-left: 0%;
-  }
-  u {
-    font-size: 80%
-  }
-  .des-text {
-    font-size: 50%
-  }
-  .downloadBtn, boxtext0, {
-    font-size: 60%;
-  }
-  .button-parent {
-    height: 10%
   }
 }
 @media screen and (max-width: 361px) {
-  i {
-    top: -0.5rem;
-  }
   .width {
     font-size: 27px;
   }
-  .main-pic {
-    width: 100%;
-  }
-  .description {
-    width: 90%;
-  }
-  .flex-item-right {
-    width: 80%;
-    margin-left: 0%;
-  }
-  u {
-    font-size: 80%
-  }
-  .des-text {
-    font-size: 50%
-  }
-  .downloadBtn, boxtext0, {
-    font-size: 60%;
-  }
-  .button-parent {
-    height: 10%
-  }
 }
 @media screen and (max-width: 321px) {
-  i {
-    top: -0.2rem;
-  }
   .width {
     font-size: 23px;
   }
-  .main-pic,
-  .description {
-    width: 90%;
-  }
-  .flex-item-right {
-    width: 100%;
-    margin-left: 0%;
-  }
-}
-.footer {
-  color: white;
-  display: inline-block;
-  position: relative;
-  bottom: 0;
-  width: 99%;
-  top: 9rem;
-  height: 5.5rem;
-}
-.footer-text {
-  font-size: 10pt;
-}
-body::-webkit-scrollbar {
-  width: 1em;
 }
 
-body::-webkit-scrollbar-track,
-body::-webkit-scrollbar-track-piece {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #45a29e;
-  outline: 0px solid slategrey;
-  border-radius: 10px;
-}
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -710,4 +471,157 @@ body::-webkit-scrollbar-thumb {
   .sidenav a {
     font-size: 18px;
   }
+}
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 769px) and (min-width: 767px) {
+  .main-pic,
+  .description {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 440px) and (min-width: 401px) {
+  i {
+    position: relative;
+    top: -0.4rem;
+    left: 0.5rem;
+  }
+  .main-pic {
+    width: 100%;
+  }
+  .description {
+    width: 90%;
+  }
+  .flex-item-right {
+    width: 80%;
+    margin-left: 0%;
+  }
+  u {
+    font-size: 80%
+  }
+  .des-text {
+    font-size: 50%
+  }
+  .button-parent {
+    height: 10%
+  }
+}
+@media screen and (max-width: 400px) {
+  i {
+    top: -0.1rem;
+    left: 0.2rem;
+  }
+  .main-pic {
+    width: 100%;
+  }
+  .description {
+    width: 90%;
+  }
+  .flex-item-right {
+    width: 80%;
+    margin-left: 0%;
+  }
+  u {
+    font-size: 80%
+  }
+  .des-text {
+    font-size: 50%
+  }
+  .button-parent {
+    height: 10%
+  }
+}
+@media screen and (max-width: 376px) {
+  i {
+    top: -0.5rem;
+    left: 0.2rem;
+  }
+  .main-pic {
+    width: 100%;
+  }
+  .description {
+    width: 90%;
+  }
+  .flex-item-right {
+    width: 80%;
+    margin-left: 0%;
+  }
+  u {
+    font-size: 80%
+  }
+  .des-text {
+    font-size: 50%
+  }
+  .button-parent {
+    height: 10%
+  }
+}
+@media screen and (max-width: 361px) {
+  i {
+    top: -0.5rem;
+  }
+  .main-pic {
+    width: 100%;
+  }
+  .description {
+    width: 90%;
+  }
+  .flex-item-right {
+    width: 80%;
+    margin-left: 0%;
+  }
+  u {
+    font-size: 80%
+  }
+  .des-text {
+    font-size: 50%
+  }
+}
+@media screen and (max-width: 321px) {
+  i {
+    top: -0.2rem;
+  }
+  .main-pic,
+  .description {
+    width: 90%;
+  }
+  .flex-item-right {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+.footer {
+  color: white;
+  display: inline-block;
+  position: relative;
+  bottom: 0;
+  width: 99%;
+  top: 9rem;
+  height: 5.5rem;
+}
+.footer-text {
+  font-size: 10pt;
+}
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track-piece {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #45a29e;
+  outline: 0px solid slategrey;
+  border-radius: 10px;
 }
