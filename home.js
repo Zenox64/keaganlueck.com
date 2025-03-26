@@ -25,18 +25,12 @@ header.textContent = greeting;
 
 var picture = document.getElementById('myPicture');
 const recentPix = [
-  "IMG_0652.jpeg",
-  "IMG_0641.jpeg",
-  "wolves-w(92-100).jpg",
-  "wolves-hawks'25.jpg",
-  "IMG_5533.jpg",
-  "4ACF1380-91BD-401C-BB78-1C44054D7AB7.jpg",
-  "28051419-1ACF-484E-AA0C-68623A2745F5.jpg",
-  "243E739E-7628-41FD-A207-69C21E179532.jpg",
-  "DSC_0805.jpg",
-  "DSC_0789.jpg",
-  "DSCF0132.jpg",
-  "DSCF0145.jpg"
+  "IMG_0938.jpg",
+  "IMG_0931.jpg",
+  "IMG_0883.jpg",
+  "IMG_0903.jpg",
+  "IMG_1442.jpg",
+  "DSC_0850.jpg"
 ];
 
 let count = 0;
