@@ -195,10 +195,8 @@ def post():
            \n<div id="mySidenav" class="sidenav">\
            \n<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>\
            \n<a href="index.html">home</a>\
-           \n<a href="#5074300823" style="color: #fff;"><u>photos:</u></a>\
-           \n<a href="pics.html" style="text-indent: 4%;">slideshow</a>\
-           \n<a href="pics-gallery.html"  style="text-indent: 4%;" id="current">gallery</a>\
-           \n<a href="changelog.html">changelog</a>\
+           \n<a href="pics-gallery.html">pics</a>\
+           \n<a href="https://www.luecktree.com" target="_blank" rel="noopener noreferrer">contact</a>\
            \n</div>\
            \n<a href="index.html" class="logo" id="logo"\
                ><img src="keaganlueck.com(streampi).png" width="55px" height="55px"\
@@ -208,25 +206,12 @@ def post():
            \n<a href="index.html" class="nav-links">home</a>\
            \n</li>\
            \n<li>\
-           \n<div class="dropdown">\
-           \n<button class="dropbtn" id="current">pics</button>\
-           \n<div class="dropdown-content">\
-           \n<a href="pics-gallery.html">Gallery</a>\
-           \n<a href="pics.html">Slideshow</a>\
-           \n</div>\
-           \n</div>\
+           \n<a href="pics-gallery.html" class="nav-links">pics</a>\
            \n</li>\
            \n<li>\
-           \n<a href="changelog.html" class="nav-links">changelog</a>\
+           \n<a href="https://www.luecktree.com" target="_blank" rel="noopener noreferrer" class="nav-links">contact</a>\
            \n</li>\
            \n</ul>\
-           \n<form onsubmit="pressed(event)" id="form">\
-           \n<div class="floating-label-input">\
-           \n<input type="text" id="jr" autocapitalize="off" placeholder="Search..."/>\
-           \n<label id="button" for="jr"></label>\
-           \n<!-- Label MUST be after input! -->\
-           \n</form>\
-           \n</div>\
            \n</nav>\
            \n<recents id="imgNameHeader"></recents>\
            \n<div class="numberOfPics">\
@@ -244,7 +229,6 @@ def post():
            \n<div class="flex-item-right">\
            \n<center style="background-color:#45a29e;"><boxtitle0><b style="background-color:#45a29e;"><u>info</u></b></boxtitle0></center>\
            \n<boxtext0>This photo was taken on <a href="' + justDate + '.html" >' + justDate + '</a> with <a href="' + selected_camera + '.html">' + selected_camera + '</a></boxtext0>\
-           \n<div class="button-parent"><a href="' + fileName + '" download class="downloadBtn">click to save image</a></div> \
            \n</center>\
            \n</ul>\
            \n</div>\
@@ -257,7 +241,7 @@ def post():
                    document.write(new Date().getFullYear());\
                </script>\
                Keagan Lueck<br /> \
-               User Interface - v2 Early Release\
+               User Interface - v3\
                \n</p>\
            \n</center>\
            \n</div>\
