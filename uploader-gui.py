@@ -39,7 +39,7 @@ txtInp1.bind("<FocusIn>", tempTxt1)
 
 
 #Camera dropdown
-camera_options = ["Nikon Z50", "Nikon Coolpix S8000", "Mobile Phone"]
+camera_options = ["Nikon Z50", "Nikon Coolpix S8000", "iPhone", "Flip Phone", "Digital Camera"]
 camera_var = tkinter.StringVar()
 camera_dropdown = ttk.Combobox(root, textvariable=camera_var, values=camera_options, state="readonly")
 camera_dropdown.set("Select Camera")
