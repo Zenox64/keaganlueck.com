@@ -25,12 +25,12 @@ header.textContent = greeting;
 
 var picture = document.getElementById('myPicture');
 const recentPix = [
-  "IMG_1849.jpg",
-  "IMG_6582.jpg",
-  "IMG_6370.jpg",
-  "IMG_6522.jpg",
-  "IMG_6590.jpg",
-  "IMG_1564.jpg"
+  "DSC_1171.jpg",
+  "DSC_0935.jpg",
+  "IMG_6703.jpg",
+  "DSC_1262.jpg",
+  "DSC_1534.jpg",
+  "IMG_1564.jpg",
 ];
 
 let count = 0;
