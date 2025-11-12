@@ -25,6 +25,7 @@ header.textContent = greeting;
 
 var picture = document.getElementById('myPicture');
 const recentPix = [
+  "DSC_1653.jpg",
   "100_0139.jpg",
   "100_0161.jpg",
   "100_0113.jpg",
