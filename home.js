@@ -25,13 +25,13 @@ header.textContent = greeting;
 
 var picture = document.getElementById('myPicture');
 const recentPix = [
-  "dji_fly_20260213_144326_263_1771024828875_photo.jpg",
-  "100_0375.jpg",
-  "100_0359.jpg",
-  "100_0285.jpg",
-  "100_0340.jpg",
-  "100_0224.jpeg",
-  "DSC_1382.jpg",
+  "DSC04080.jpg",
+  "DSC_1868.jpg",
+  "DSC04004.jpg",
+  "IMG_3212.jpg",
+  "DSC03859.jpg",
+  "IMG_3141.jpg",
+  "lake-effect.jpg",
 ];
 
 let count = 0;
