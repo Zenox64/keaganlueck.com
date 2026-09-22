@@ -7,7 +7,7 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
-//initial greeting 
+//initial greeting
 var today = new Date();
 var hourNow = today.getHours();
 var greeting;
@@ -23,25 +23,22 @@ if (hourNow > 18) {
 }
 header.textContent = greeting;
 
-var picture = document.getElementById('myPicture');
+var picture = document.getElementById("myPicture");
 const recentPix = [
-  "DSC04201.jpg",
+  "100_0555.jpeg",
+  "IMG_3488.jpg",
   "DSC04177.jpg",
   "DSC04134.jpg",
   "DSC04080.jpg",
   "DSC_1868.jpg",
   "DSC04004.jpg",
-  "IMG_3212.jpg",
-  "DSC03859.jpg",
-  "IMG_3141.jpg",
-  "lake-effect.jpg",
 ];
 
 let count = 0;
 
 function cycleArray() {
-    picture.src = recentPix[count];
-    count = (count + 1) % recentPix.length;
+  picture.src = recentPix[count];
+  count = (count + 1) % recentPix.length;
 }
 
 setInterval(cycleArray, 2000);
