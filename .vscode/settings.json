@@ -25,7 +25,8 @@
     "statusBar.debuggingBackground": "#45a29e",
     "statusBar.debuggingForeground": "#15202b",
     "activityBar.activeBorder": "#15202b",
-    "activityBarTop.activeBorder": "#15202b"
+    "activityBarTop.activeBorder": "#15202b",
+    "statusBar.inactiveBackground": "#45a29e"
   },
   "peacock.color": "45a29e",
   "liveServer.settings.port": 5501
