@@ -25,6 +25,7 @@ header.textContent = greeting;
 
 var picture = document.getElementById("myPicture");
 const recentPix = [
+  "IMG_4087.jpg",
   "IMG_3909.jpg",
   "DSC04284.JPG",
   "100_0555.jpeg",
@@ -32,8 +33,6 @@ const recentPix = [
   "DSC04177.jpg",
   "DSC04134.jpg",
   "DSC04080.jpg",
-  "DSC_1868.jpg",
-  "DSC04004.jpg",
 ];
 
 let count = 0;
